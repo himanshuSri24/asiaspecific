@@ -15,17 +15,21 @@ export default function Home() {
 
   React.useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width:400px)");
-    console.log(mediaQuery.matches);
+    //  console.log(mediaQuery.matches);
+    const object:any = document.querySelector(".about");
+     console.log(object.offsetHeight);
 
     if (!mediaQuery.matches) {
-      const contentHolderHeight = document.querySelector(".about").offsetHeight;
+      const contentHolderHeight = object.offsetHeight;
+      // console.log(contentHolderHeight);
       const imgHolderHeight = window.innerHeight;
       const additionalScrollHeight = window.innerHeight;
       const totalBodyHeight =
         contentHolderHeight + imgHolderHeight + additionalScrollHeight + 20;
       if (isMobile) {
       } else {
-        document.querySelector(".box1").style.height = `${totalBodyHeight}px`;
+        const box1:any = document.querySelector(".box1");
+        box1.style.height = `${totalBodyHeight}px`;
       }
 
       gsap.defaults({
@@ -89,11 +93,13 @@ export default function Home() {
           });
       }
     } else {
-      const contentHolderHeight = document.querySelector(".about").offsetHeight;
+      const about:any = document.querySelector(".about");
+      const contentHolderHeight = about.offsetHeight;
       const imgHolderHeight = window.innerHeight;
       const additionalScrollHeight = window.innerHeight;
       const totalBodyHeight = contentHolderHeight + imgHolderHeight;
-      document.querySelector(".mbox2").style.height = `${totalBodyHeight}px`;
+      const object:any = document.querySelector(".mbox2");
+      object.style.height = `${totalBodyHeight}px`;
 
       gsap.to(".img-holder", {
         rotation: 0,
