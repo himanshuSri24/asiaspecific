@@ -34,7 +34,6 @@ body {
   top: 0;
   padding: 0px 100px 0px 100px;
   font-family: "Poppins", sans-serif;
-  max-width: 100vw;
 }
 
 .a1 {
@@ -164,6 +163,7 @@ p {
   justify-content: center;
   align-items: center;
 }
+
 .about1 {
   background: url("https://i.ibb.co/7S7cRJX/background2.jpg") center
     center/cover;
@@ -226,8 +226,54 @@ p {
   font-size: 20px;
   line-height: 36px;
 }
+.icon{
+  color:white;
+  font-size: 25px;
+  display: none;
+}
+
 
 @media (max-width : 400px) {
+
+  .about {
+    position: relative;
+    top: 0px;
+    width: 100%;
+    height: 120vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      url("https://i.ibb.co/0Fds0wh/background1.jpg") center center/cover;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+  }
+  .about1{
+    height: 110vh;
+    width: 85vw;
+  }
+  .navbar{
+  display: flex;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.49);
+  height: 60px;
+  width: 100vw;
+  align-items: center;
+  z-index: 7;
+  position: fixed;
+  top: 0;
+  gap: 10rem;
+  padding: 0px 100px 0px 100px;
+  font-family: "Poppins", sans-serif;
+  }
+
+  .icon{
+    color:white;
+    font-size: 25px;
+    display: inline-block;
+  }
+  
+  .a1{
+    display: none;
+  }
   .s1d1p2 {
     font-size: 2.5rem;
     gap: 10px;
@@ -236,8 +282,18 @@ p {
     font-size: 1rem;
   }
   .about1 {
-    height: 90vh;
+    height: 100vh;
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
+  
+  .i2{
+    height: 280px;
+    width:280px;
+  }
+
   .navbar {
     height: 60px;
   }

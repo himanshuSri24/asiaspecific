@@ -7,6 +7,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import React, { useRef, useState } from "react";
 import img3 from "../../images/image 21.png";
+import { FiAlignJustify } from "react-icons/fi";
 
 export default function Home() {
   gsap.registerPlugin(ScrollTrigger);
@@ -91,8 +92,7 @@ export default function Home() {
       const contentHolderHeight = document.querySelector(".about").offsetHeight;
       const imgHolderHeight = window.innerHeight;
       const additionalScrollHeight = window.innerHeight;
-      const totalBodyHeight =
-        contentHolderHeight + imgHolderHeight + additionalScrollHeight + 20;
+      const totalBodyHeight = contentHolderHeight + imgHolderHeight;
       document.querySelector(".mbox2").style.height = `${totalBodyHeight}px`;
 
       gsap.to(".img-holder", {
@@ -102,7 +102,7 @@ export default function Home() {
         scrollTrigger: {
           start: "top top",
           end: "+=200%",
-          scrub: 3,
+          scrub: 1,
         },
       });
 
@@ -112,7 +112,7 @@ export default function Home() {
         scrollTrigger: {
           start: "top top",
           end: "+=200%",
-          scrub: 3,
+          scrub: 1,
         },
       });
 
@@ -173,7 +173,12 @@ export default function Home() {
           <div>E-Catalogue</div>
           <div>Contact Us</div>
         </div>
+        <div className="icon">
+          {" "}
+          <FiAlignJustify />{" "}
+        </div>
       </div>
+
       {isMobile ? (
         <div className="mbox2 h-[100vh] w-[100vw]">
           <div className="ms1">
@@ -216,20 +221,14 @@ export default function Home() {
       {isMobile ? (
         <div className="about">
           <div className="about1">
+            <div className="text-[52px] font-[500] leading-[74px] text-[#212121]">
+              About us
+            </div>
             <div>
               <Image src={img3} alt="" className="i2" />
             </div>
-
-            <div className="about2d2 flex flex-col justify-evenly">
-              <div className="text-[52px] font-[500] leading-[74px] text-[#212121]">
-                About us
-              </div>
-
-              <div className="w-[60px] h-[1px] bg-[#E94D11] relative bottom-2"></div>
-
-              <div>
+            <div>
                 <br />
-                {/* <br /> */}
                 Welcome to ASIA PACIFIC, Morbis premier ceramic manufacturer
                 dedicated to redefining interior and exterior construction
                 materials.
@@ -238,12 +237,8 @@ export default function Home() {
                 We specialize in crafting high-end compact surfaces using
                 top-tier natural raw materials and cutting-edge Italian
                 technology. Our innovative manufacturing process involves
-                subjecting materials to extreme temperatures and pressure,
-                replicating the natural stone formation in a fraction of the
-                time. This results in products with exceptional durability,
-                strength, and aesthetic appeal.
+                subjecting materials to extreme
               </div>
-            </div>
           </div>
         </div>
       ) : (
