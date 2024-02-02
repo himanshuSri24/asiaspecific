@@ -7,7 +7,53 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import React, { useRef, useState } from "react";
 import img3 from "../../images/image 21.png";
+import CircularSlider from "@/component/CircularSlider";
 import { FiAlignJustify } from "react-icons/fi";
+
+const cards = [
+  {
+    src: "https://assets.codepen.io/756881/amys-1.jpg",
+    alt: "",
+    heading: "Random heading",
+    buttonLabel: "Button Label 1",
+    buttonFunction: () => {},
+  },
+  {
+    src: "https://assets.codepen.io/756881/amys-2.jpg",
+    alt: "",
+    heading: "Heading 2",
+    buttonLabel: "Button Label 2",
+    buttonFunction: () => {},
+  },
+  {
+    src: "https://assets.codepen.io/756881/amys-3.jpg",
+    alt: "",
+    heading: "Heading 3",
+    buttonLabel: "Button Label 3",
+    buttonFunction: () => {},
+  },
+  {
+    src: "https://assets.codepen.io/756881/amys-4.jpg",
+    alt: "",
+    heading: "Heading 4",
+    buttonLabel: "Button Label 4",
+    buttonFunction: () => {},
+  },
+  {
+    src: "https://assets.codepen.io/756881/amys-5.jpg",
+    alt: "",
+    heading: "Heading 5",
+    buttonLabel: "Button Label 5",
+    buttonFunction: () => {},
+  },
+  {
+    src: "https://assets.codepen.io/756881/amys-6.jpg",
+    alt: "",
+    heading: "Heading 6",
+    buttonLabel: "Button Label 6",
+    buttonFunction: () => {},
+  },
+];
 
 export default function Home() {
   gsap.registerPlugin(ScrollTrigger);
@@ -16,8 +62,8 @@ export default function Home() {
   React.useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width:400px)");
 
-    const object:any = document.querySelector(".about");
-     console.log(object.offsetHeight);
+    const object: any = document.querySelector(".about");
+    console.log(object.offsetHeight);
 
     if (!mediaQuery.matches) {
       const contentHolderHeight = object.offsetHeight;
@@ -28,7 +74,7 @@ export default function Home() {
         contentHolderHeight + imgHolderHeight + additionalScrollHeight + 20;
       if (isMobile) {
       } else {
-        const box1:any = document.querySelector(".box1");
+        const box1: any = document.querySelector(".box1");
         box1.style.height = `${totalBodyHeight}px`;
       }
 
@@ -93,12 +139,12 @@ export default function Home() {
           });
       }
     } else {
-      const about:any = document.querySelector(".about");
+      const about: any = document.querySelector(".about");
       const contentHolderHeight = about.offsetHeight;
       const imgHolderHeight = window.innerHeight;
       const additionalScrollHeight = window.innerHeight;
       const totalBodyHeight = contentHolderHeight + imgHolderHeight;
-      const object:any = document.querySelector(".mbox2");
+      const object: any = document.querySelector(".mbox2");
       object.style.height = `${totalBodyHeight}px`;
 
       gsap.to(".img-holder", {
@@ -236,20 +282,19 @@ export default function Home() {
               <Image src={img3} alt="" className="i2" />
             </div>
             <div className="px-3">
-                <br />
-                Welcome to ASIA PACIFIC, Morbis premier ceramic manufacturer
-                dedicated to redefining interior and exterior construction
-                materials.
-                <br />
-                <br />
-                We specialize in crafting high-end compact surfaces using
-                top-tier natural raw materials and cutting-edge Italian
-                technology. Our innovative manufacturing process involves
-                subjecting materials to extreme temperatures and pressure,
-                replicating the natural stone formation in a fraction of the
-                time. This results in products with exceptional durability,
-                strength, and aesthetic appeal.
-              </div>
+              <br />
+              Welcome to ASIA PACIFIC, Morbis premier ceramic manufacturer
+              dedicated to redefining interior and exterior construction
+              materials.
+              <br />
+              <br />
+              We specialize in crafting high-end compact surfaces using top-tier
+              natural raw materials and cutting-edge Italian technology. Our
+              innovative manufacturing process involves subjecting materials to
+              extreme temperatures and pressure, replicating the natural stone
+              formation in a fraction of the time. This results in products with
+              exceptional durability, strength, and aesthetic appeal.
+            </div>
           </div>
         </div>
       ) : (
@@ -288,10 +333,7 @@ export default function Home() {
       )}
 
       {/* circular slider */}
-      {isMobile?<></>:  <div className="circular-slider"></div>}
-      
-      {/* section another    */}
-      
+      <CircularSlider images={cards} />
     </div>
   );
 }
