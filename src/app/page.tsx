@@ -15,13 +15,13 @@ export default function Home() {
 
   React.useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width:400px)");
-    //  console.log(mediaQuery.matches);
+
     const object:any = document.querySelector(".about");
      console.log(object.offsetHeight);
 
     if (!mediaQuery.matches) {
       const contentHolderHeight = object.offsetHeight;
-      // console.log(contentHolderHeight);
+
       const imgHolderHeight = window.innerHeight;
       const additionalScrollHeight = window.innerHeight;
       const totalBodyHeight =
@@ -166,7 +166,7 @@ export default function Home() {
     return () => {
       mediaQuery.removeEventListener("change", handleMediaQueryChange);
     };
-  }, []);
+  });
 
   return (
     <div>
@@ -227,13 +227,15 @@ export default function Home() {
       {isMobile ? (
         <div className="about">
           <div className="about1">
-            <div className="text-[52px] font-[500] leading-[74px] text-[#212121]">
+            <div className="text-[30px] font-[500] leading-[32px] text-[#212121] relative right-[75px] my-2">
               About us
             </div>
+            <div className="w-[60px] h-[1px] bg-[#E94D11] relative bottom-2 right-[105px]"></div>
+
             <div>
               <Image src={img3} alt="" className="i2" />
             </div>
-            <div>
+            <div className="px-3">
                 <br />
                 Welcome to ASIA PACIFIC, Morbis premier ceramic manufacturer
                 dedicated to redefining interior and exterior construction
@@ -243,7 +245,10 @@ export default function Home() {
                 We specialize in crafting high-end compact surfaces using
                 top-tier natural raw materials and cutting-edge Italian
                 technology. Our innovative manufacturing process involves
-                subjecting materials to extreme
+                subjecting materials to extreme temperatures and pressure,
+                replicating the natural stone formation in a fraction of the
+                time. This results in products with exceptional durability,
+                strength, and aesthetic appeal.
               </div>
           </div>
         </div>
@@ -283,8 +288,10 @@ export default function Home() {
       )}
 
       {/* circular slider */}
-
-      <div className="circular-slider"></div>
+      {isMobile?<></>:  <div className="circular-slider"></div>}
+      
+      {/* section another    */}
+      
     </div>
   );
 }
