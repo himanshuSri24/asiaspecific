@@ -411,3 +411,8 @@ p {
   margin-top: 20%;
   cursor: pointer;
 }
+
+.max_z {
+  background-color: white;
+  position: relative;
+}
