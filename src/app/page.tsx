@@ -9,6 +9,7 @@ import React, { useRef, useState } from "react";
 import img3 from "../../images/image 21.png";
 import CircularSlider from "@/component/CircularSlider";
 import { FiAlignJustify } from "react-icons/fi";
+import Strength from "@/component/strength/Strength";
 
 const cards = [
   {
@@ -215,7 +216,7 @@ export default function Home() {
   });
 
   return (
-    <div>
+    <div className=" max-w-[100vw]">
       <div className="navbar">
         <Image src={img1} alt="" className="i1" />
         <div className="a1">
@@ -336,53 +337,14 @@ export default function Home() {
       {/* <div className="h-[100vh]"> */}
       <CircularSlider images={cards} />
       {/* </div> */}
-      <div className="max_z">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed repellat ea
-        earum magni animi ducimus debitis harum quia accusamus exercitationem
-        maiores alias, quod architecto ab quas perferendis tempore facere
-        facilis enim explicabo sint velit recusandae? Distinctio est vel
-        reprehenderit sunt? Fuga commodi rerum omnis id officia veniam! Vel
-        error voluptatem nobis soluta laudantium delectus dolores molestias,
-        vero animi aliquid aliquam facere esse. Voluptate ducimus, provident
-        esse modi qui similique hic laboriosam atque dicta fuga aliquid
-        consectetur voluptates, doloremque itaque aut. Rerum fuga autem dicta
-        adipisci labore, repellendus expedita obcaecati unde. Ipsum, laudantium?
-        Sequi quaerat optio voluptatum ex aperiam, praesentium voluptatibus aut.
-        Corrupti aliquam nobis beatae quis, distinctio optio recusandae eaque
-        excepturi perspiciatis possimus eum ex eos consectetur ducimus fugit
-        earum temporibus facere animi minus nam cupiditate ullam maxime delectus
-        eius. Vitae culpa modi soluta perferendis nulla vero, provident totam
-        ipsum fugiat blanditiis, quod porro fuga. Ad tempore fugiat dicta illo
-        consectetur deleniti ex ut reiciendis alias dolores, ea culpa molestias
-        minus mollitia quas voluptate iste doloribus quam adipisci maxime nulla
-        reprehenderit vero nisi! Magni quisquam tenetur necessitatibus
-        repellendus dolorum id! At ad illum, ea veniam ex similique voluptate
-        omnis. Quis, aut, neque corporis recusandae odio veniam at beatae saepe
-        esse quisquam, quo eos. Commodi numquam animi, nostrum repellendus natus
-        sequi aliquam dignissimos ad delectus blanditiis tempora eveniet
-        architecto ipsum omnis, non vel aliquid dolorum incidunt, ex alias
-        corporis. Itaque porro, veritatis, doloremque repellendus in distinctio
-        id iste dolores accusamus ratione pariatur magni similique alias rem?
-        Delectus at, fugiat autem deserunt quidem impedit doloremque placeat
-        unde neque commodi rem accusamus itaque inventore veritatis cupiditate
-        dolore enim labore? Non, distinctio ullam? Iure, error possimus. A,
-        velit consequatur harum sequi, inventore sint quae sit commodi et cum,
-        ducimus nemo praesentium cumque nobis voluptate. Ipsam rem nostrum ex
-        qui odit illo in tempore totam explicabo vel eaque magnam est facilis
-        quasi accusantium beatae aperiam soluta, recusandae voluptas nulla
-        blanditiis inventore! Illum illo eaque delectus quam? Omnis eaque nulla
-        necessitatibus corrupti odio! Praesentium non dignissimos labore quaerat
-        aperiam, dolor officia placeat, ipsam quas debitis minus tempore optio
-        neque numquam repellat iure fuga dolorum facilis? Enim placeat nihil
-        corrupti laudantium possimus quis molestias amet temporibus, iusto
-        aliquid tempore dolorum aut sed facilis, cupiditate ducimus, impedit
-        sint non accusantium mollitia aperiam quam ex excepturi quas! Dolor, id
-        molestias obcaecati officia voluptates quidem! Provident iure vel,
-        consectetur assumenda dicta maxime omnis eum vero iste! Eaque nobis
-        ipsum officia nihil vero earum perferendis, cum nulla enim eligendi odio
-        libero, rem doloremque! Illo, dolore sunt ducimus sequi itaque error
-        non?
+      <div className="max_z w-[100vw]">
+        <div className="bg-[#212121] h-[50vh] "></div>
+        
+        <Strength />
+
       </div>
+
+      
     </div>
   );
 }
