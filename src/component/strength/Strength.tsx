@@ -20,7 +20,7 @@ const Strength = () => {
   return (
     <div>
       <div className="body123 flex flex-col">
-        <div className="h-[400px] w-[100vw] bg-[#212121] flex flex-col justify-center items-center gap-[7vh]">
+        <div className="section1">
           <div className="strength">
             <div className="line1"></div>
             <div className="strength-content">Strength</div>

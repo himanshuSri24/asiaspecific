@@ -456,13 +456,12 @@ export default function Home() {
 
       {/* </div> */}
       <div className="max_z w-[100vw]">
-        <div className="main">
+ 
           <div id="top" className="none"></div>
-          <div id="center"></div>
-          <div id="bottom">
+ 
             <Strength />
-          </div>
-        </div>
+          
+  
       </div>
     </div>
   );

@@ -236,6 +236,17 @@
   gap: 50px;
 }
 
+.section1{
+  /* height: 400px; */
+  width: 100vw;
+  background-color: #212121;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:7vh;
+}
+
 .ready {
   height: 15vh;
   background: #212121;
