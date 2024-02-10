@@ -5,10 +5,11 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "assets.codepen.io",
+        hostname: "i.ibb.co",
       },
     ],
   },
 };
 
 export default nextConfig;
+ 

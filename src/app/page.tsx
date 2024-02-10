@@ -10,45 +10,45 @@ import img3 from "../../images/image 21.png";
 import CircularSlider from "@/component/CircularSlider";
 import { FiAlignJustify } from "react-icons/fi";
 import Strength from "@/component/strength/Strength";
-
+import img4 from "../../images/1bb.png";
 const cards = [
   {
-    src: "https://assets.codepen.io/756881/amys-1.jpg",
+    src: "https://i.ibb.co/dLk8nrW/Photo-1.png",
     alt: "",
     heading: "Random heading",
     buttonLabel: "Button Label 1",
     buttonFunction: () => {},
   },
   {
-    src: "https://assets.codepen.io/756881/amys-2.jpg",
+    src: "https://i.ibb.co/rQVnqkN/Photo-2.png",
     alt: "",
     heading: "Heading 2",
     buttonLabel: "Button Label 2",
     buttonFunction: () => {},
   },
   {
-    src: "https://assets.codepen.io/756881/amys-3.jpg",
+    src: "https://i.ibb.co/x76KyJW/Photo-3.png",
     alt: "",
     heading: "Heading 3",
     buttonLabel: "Button Label 3",
     buttonFunction: () => {},
   },
   {
-    src: "https://assets.codepen.io/756881/amys-4.jpg",
+    src: "https://i.ibb.co/YDmpwyN/Photo-4.png",
     alt: "",
     heading: "Heading 4",
     buttonLabel: "Button Label 4",
     buttonFunction: () => {},
   },
   {
-    src: "https://assets.codepen.io/756881/amys-5.jpg",
+    src: "https://i.ibb.co/QpCWhdn/Photo-5.png",
     alt: "",
     heading: "Heading 5",
     buttonLabel: "Button Label 5",
     buttonFunction: () => {},
   },
   {
-    src: "https://assets.codepen.io/756881/amys-6.jpg",
+    src: "https://i.ibb.co/dt8Xwsr/Photo-6.png",
     alt: "",
     heading: "Heading 6",
     buttonLabel: "Button Label 6",
@@ -125,7 +125,7 @@ export default function Home() {
             },
           })
           .to(".s1d1p2", {
-            gap: "1000px",
+            gap: "400vw",
             scale: 9,
           });
 
@@ -138,6 +138,7 @@ export default function Home() {
           .to(".s1d1p1", {
             scale: 2,
           });
+
       }
     } else {
       const about: any = document.querySelector(".about");
@@ -335,16 +336,134 @@ export default function Home() {
 
       {/* circular slider */}
       {/* <div className="h-[100vh]"> */}
-      <CircularSlider images={cards} />
-      {/* </div> */}
-      <div className="max_z w-[100vw]">
-        <div className="bg-[#212121] h-[50vh] "></div>
-        
-        <Strength />
-
+      <div className="laptop">
+        <CircularSlider images={cards} />
       </div>
 
-      
+      <div className="max_z w-[100vw]">
+        <div className="mobile">
+          <div className="sliderm">
+            <div className="mobile-card">
+              <div className="bubu">
+                <div>
+                  <Image
+                    src={img4}
+                    alt=""
+                    height={104}
+                    width={178}
+                    className="i89"
+                  />
+                </div>
+                <div className="mobile-card-text">Porcelain Tile</div>
+                <div>
+                  <button className="mobile-card-button">view Products</button>
+                </div>
+              </div>
+            </div>
+
+            <div className="mobile-card1">
+              <div className="bubu">
+                <div>
+                  <Image
+                    src={img4}
+                    alt=""
+                    height={104}
+                    width={178}
+                    className="i89"
+                  />
+                </div>
+                <div className="mobile-card-text">Ceramic Tiles</div>
+                <div>
+                  <button className="mobile-card-button">view Products</button>
+                </div>
+              </div>
+            </div>
+
+            <div className="mobile-card2">
+              <div className="bubu">
+                <div>
+                  <Image
+                    src={img4}
+                    alt=""
+                    height={104}
+                    width={178}
+                    className="i89"
+                  />
+                </div>
+                <div className="mobile-card-text">Outdoor Pavers</div>
+                <div>
+                  <button className="mobile-card-button">view Products</button>
+                </div>
+              </div>
+            </div>
+
+            <div className="mobile-card3">
+              <div className="bubu">
+                <div>
+                  <Image
+                    src={img4}
+                    alt=""
+                    height={104}
+                    width={178}
+                    className="i89"
+                  />
+                </div>
+                <div className="mobile-card-text">SPC Flooring</div>
+                <div>
+                  <button className="mobile-card-button">view Products</button>
+                </div>
+              </div>
+            </div>
+
+            <div className="mobile-card4">
+              <div className="bubu">
+                <div>
+                  <Image
+                    src={img4}
+                    alt=""
+                    height={104}
+                    width={178}
+                    className="i89"
+                  />
+                </div>
+                <div className="mobile-card-text">Slab Tiles</div>
+                <div>
+                  <button className="mobile-card-button">view Products</button>
+                </div>
+              </div>
+            </div>
+
+            <div className="mobile-card5">
+              <div className="bubu">
+                <div>
+                  <Image
+                    src={img4}
+                    alt=""
+                    height={104}
+                    width={178}
+                    className="i89"
+                  />
+                </div>
+                <div className="mobile-card-text">Subway tiles</div>
+                <div>
+                  <button className="mobile-card-button">view Products</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* </div> */}
+      <div className="max_z w-[100vw]">
+        <div className="main">
+          <div id="top" className="none"></div>
+          <div id="center"></div>
+          <div id="bottom">
+            <Strength />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

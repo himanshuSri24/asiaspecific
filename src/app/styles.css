@@ -29,7 +29,7 @@ body {
   width: 100vw;
   padding: 20px;
   align-items: center;
-  z-index: 7;
+  z-index: 50000;
   position: fixed;
   top: 0;
   padding: 0px 100px 0px 100px;
@@ -245,7 +245,52 @@ p {
   display: none;
 }
 
+.mobile-slider{
+  width: 100vw;
+  height: 100vh;
+  background-color: #f9f6f3;
+}
+
+.mobile{
+  display: none;
+}
+
+#main{
+position: relative;
+width:100%;
+height:100vh;
+background-color: #f2a0a0;
+}
+
+#top{
+  position: absolute;
+  top:0%;
+  width: 100%;
+  background-color: #212121;
+  height: 50vh;
+}
+
+#center{
+  width:100%;
+  height:100vh;
+  background-color: black;
+}
+
+
+#bottom{
+  position: absolute;
+  bottom:0%;
+  width:100%;
+  height:50vh;
+  background-color: #964242;
+}
+
+ 
+
 @media (max-width: 400px) {
+  .laptop{
+    display: none;
+  }
   .about {
     position: relative;
     top: 0px;
@@ -256,6 +301,9 @@ p {
     padding: 1em;
     display: flex;
     flex-direction: column;
+  }
+  .none{
+    display: none;
   }
   .about1 {
     height: 110vh;
@@ -322,6 +370,100 @@ p {
     background: #fff;
     clip-path: polygon(18.5% 48%, 79.5% 40%, 92.5% 72%, 32.5% 80%);
     transform: rotate(30deg);
+  }
+
+  .mobile{ 
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f6f3;
+  }
+  .sliderm{
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .mobile-card{
+    background: url("https://i.ibb.co/dLk8nrW/Photo-1.png") no-repeat center center/cover;
+    height: 492.31px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .mobile-card1{
+    background: url("https://i.ibb.co/rQVnqkN/Photo-2.png") no-repeat center center/cover;
+    height:492.31px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .mobile-card2{
+    background: url("https://i.ibb.co/x76KyJW/Photo-3.png") no-repeat center center/cover;
+    height:492.31px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  .mobile-card3{
+    background: url("https://i.ibb.co/YDmpwyN/Photo-4.png") no-repeat center center/cover;
+    height:492.31px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  .mobile-card4{
+    background: url("https://i.ibb.co/QpCWhdn/Photo-5.png") no-repeat center center/cover;
+    height:492.31px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  .mobile-card5{
+    background: url("https://i.ibb.co/dt8Xwsr/Photo-6.png") no-repeat center center/cover;
+    height:492.31px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  .mobile-card-text{
+    font-weight: 500;
+    font-size:37px ;  
+    color: #ffffff;
+    line-height: 51.69px;
+    width: 165px;
+  }
+  .mobile-card-button{
+   height: 32.31px;
+   width: 127.38px;
+   padding:6.15px, 19.69px, 6.15px, 19.69px;
+   border: 1px solid #ffffff;
+   color: #FFFFFF;
+   font-size: 12.31px;
+   margin-top: 10px;
+  }
+  .bubu{
+    transform: translate(33px, 64px);
+  }
+
+  .i89{
+    transform: translateX(-9px);
   }
 }
 
