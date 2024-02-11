@@ -286,8 +286,18 @@ bottom: 1%;
 .mobile-strength{
   display: none;
 }
-
+.navbar-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 150px;
+}
 @media (max-width: 400px) {
+
+  .navbar-image{
+    min-width: 109px;
+  }
+
   .mobile-strength{
     display: flex;
   }
@@ -487,11 +497,7 @@ bottom: 1%;
   height: 500vh;
   background-color: red;
 }
-.navbar-image{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+
 .slider_section {
   height: 100vh;
   z-index: 2000;

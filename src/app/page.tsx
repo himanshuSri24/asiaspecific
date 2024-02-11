@@ -91,8 +91,8 @@ export default function Home() {
         scrollTrigger: {
             trigger: "#main",
             // markers: true,
-            start: "100% 50%",
-            end: "100% 50%",
+            start: "90% 50%",
+            end: "90% 50%",
             scrub: 2,
             pin: true,
         }
