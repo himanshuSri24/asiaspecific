@@ -11,6 +11,9 @@ import CircularSlider from "@/component/CircularSlider";
 import { FiAlignJustify } from "react-icons/fi";
 import Strength from "@/component/strength/Strength";
 import img4 from "../../images/1bb.png";
+import img6 from "../../images/path4 (1).png"
+import img5 from "../../images/path2 (2).png"
+
 const cards = [
   {
     src: "https://i.ibb.co/dLk8nrW/Photo-1.png",
@@ -83,6 +86,24 @@ export default function Home() {
         duration: 2,
         ease: "power1.inOut",
       });
+  
+      var tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: "#main",
+            // markers: true,
+            start: "100% 50%",
+            end: "100% 50%",
+            scrub: 2,
+            pin: true,
+        }
+    })
+    
+    tl.to("#top", {
+        top: "-50%"
+    }, 'a').to("#bottom", {
+        bottom: "-100%"
+    }, 'a')
+    
 
       gsap.to(".img-holder", {
         rotation: 0,
@@ -192,6 +213,8 @@ export default function Home() {
           // markers:true,
         },
       });
+
+      
     }
   }, [isMobile]);
 
@@ -217,9 +240,13 @@ export default function Home() {
   });
 
   return (
-    <div className=" max-w-[100vw]">
+    <div className="hero-section">
       <div className="navbar">
-        <Image src={img1} alt="" className="i1" />
+        <div className="navbar-image">
+        <Image src={img6} alt="" /> 
+        <Image src={img5} alt="" className="i78" />
+        </div>
+        
         <div className="a1">
           <div>Home</div>
           <div>About Us</div>
@@ -340,7 +367,7 @@ export default function Home() {
         <CircularSlider images={cards} />
       </div>
 
-      <div className="max_z w-[100vw]">
+      <div className="max_z max-w-[100vw]">
         <div className="mobile">
           <div className="sliderm">
             <div className="mobile-card">
@@ -455,13 +482,25 @@ export default function Home() {
       </div>
 
       {/* </div> */}
-      <div className="max_z w-[100vw]">
- 
-          <div id="top" className="none"></div>
- 
-            <Strength />
-          
-  
+      
+      {/* <div className="mobile-strength max_z ">
+           <div id="main">
+            <div id="top"></div>
+            <div id="center"></div>
+            <div id="bottom">
+              <Strength />
+            </div>
+           </div>
+      </div> */}
+      
+      <div className="max_z">
+           <div id="main">
+            <div id="top"></div>
+            <div id="center"></div>
+            <div id="bottom">
+              <Strength />
+            </div>
+           </div>
       </div>
     </div>
   );
