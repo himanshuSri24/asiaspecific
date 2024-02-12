@@ -90,7 +90,7 @@ export default function Home() {
       var tl = gsap.timeline({
         scrollTrigger: {
             trigger: "#main",
-            markers: true,
+            // markers: true,
             start: "110% 50%",
             end: "110% 50%",
             scrub: 2,
