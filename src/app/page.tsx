@@ -18,43 +18,43 @@ const cards = [
   {
     src: "https://i.ibb.co/dLk8nrW/Photo-1.png",
     alt: "",
-    heading: "Random heading",
-    buttonLabel: "Button Label 1",
+    heading: "Porcelian Tiles",
+    buttonLabel: "View Products",
     buttonFunction: () => {},
   },
   {
     src: "https://i.ibb.co/rQVnqkN/Photo-2.png",
     alt: "",
-    heading: "Heading 2",
-    buttonLabel: "Button Label 2",
+    heading: "Ceramic Tiles",
+    buttonLabel: "View Products",
     buttonFunction: () => {},
   },
   {
     src: "https://i.ibb.co/x76KyJW/Photo-3.png",
     alt: "",
-    heading: "Heading 3",
-    buttonLabel: "Button Label 3",
+    heading: "Outdoor Pavers",
+    buttonLabel: "View Products",
     buttonFunction: () => {},
   },
   {
     src: "https://i.ibb.co/YDmpwyN/Photo-4.png",
     alt: "",
-    heading: "Heading 4",
-    buttonLabel: "Button Label 4",
+    heading: "SPC Flooring",
+    buttonLabel: "View Products",
     buttonFunction: () => {},
   },
   {
     src: "https://i.ibb.co/QpCWhdn/Photo-5.png",
     alt: "",
-    heading: "Heading 5",
-    buttonLabel: "Button Label 5",
+    heading: "Slab Tiles",
+    buttonLabel: "View Products",
     buttonFunction: () => {},
   },
   {
     src: "https://i.ibb.co/dt8Xwsr/Photo-6.png",
     alt: "",
-    heading: "Heading 6",
-    buttonLabel: "Button Label 6",
+    heading: "Subway Tiles",
+    buttonLabel: "View Products",
     buttonFunction: () => {},
   },
 ];
@@ -90,16 +90,16 @@ export default function Home() {
       var tl = gsap.timeline({
         scrollTrigger: {
             trigger: "#main",
-            // markers: true,
-            start: "90% 50%",
-            end: "90% 50%",
+            markers: true,
+            start: "110% 50%",
+            end: "110% 50%",
             scrub: 2,
             pin: true,
         }
     })
     
     tl.to("#top", {
-        top: "-50%"
+        top: "-60%"
     }, 'a').to("#bottom", {
         bottom: "-100%"
     }, 'a')
@@ -243,8 +243,8 @@ export default function Home() {
     <div className="hero-section">
       <div className="navbar">
         <div className="navbar-image">
-        <Image src={img6} alt="" /> 
-        <Image src={img5} alt="" className="i78" />
+        <Image src={img6} height={40} alt="" /> 
+        <Image src={img5} height={27} width={79} alt="" className="i78" />
         </div>
         
         <div className="a1">

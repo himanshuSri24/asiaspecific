@@ -3,7 +3,7 @@ import Image from "next/image";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { progress } from "framer-motion";
-
+import img4 from "../../images/1bb.png"
 // props for the slider component
 interface ImageProps {
   src: string;
@@ -288,8 +288,12 @@ const CircularSlider = ({ images }: { images: ImageProps[] }) => {
                   height={1000}
                   className="slider_img"
                 />
+           
                 <div className="overlay_on_slider left-0">
-                  <span>{image.heading}</span>
+                  
+                  <span>
+                  <Image src={img4} alt="" />
+                    {image.heading}</span>
                   <div
                     className="view_products cursor-pointer"
                     onClick={image.buttonFunction}
