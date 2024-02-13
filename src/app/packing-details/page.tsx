@@ -64,7 +64,7 @@ const PackingDetails = () => {
                 <td>2041.2</td>
               </tr>
               <tr key={5}>
-                <td>300X600 mm (12"X24")</td>
+                <td>300X600 mm (12X24)</td>
                 <td>20</td>
                 <td>GLAZED PROCELAIN Elevation</td>
                 <td>GLOSS/MATT/HIGH GLOSS</td>
@@ -138,7 +138,7 @@ const PackingDetails = () => {
               </tr>
 
               <tr key={10}>
-                <td>600X600 mm (24"X24")</td>
+                <td>600X600 mm (24X24)</td>
                 <td>20</td>
                 <td>FULL BODY OUTDOOR PORCELAIN TILES</td>
                 <td>MATT</td>
@@ -153,7 +153,7 @@ const PackingDetails = () => {
               </tr>
 
               <tr key={11}>
-                <td>600X1200 mm (24"X48")</td>
+                <td>600X1200 mm (24X48)</td>
                 <td>20</td>
                 <td>GLAZED PROCELAIN TILES</td>
                 <td>GLOSS/MATT/HIGH GLOSS</td>
@@ -168,7 +168,7 @@ const PackingDetails = () => {
               </tr>
 
               <tr key={12}>
-                <td>800X800 mm (32"X32")</td>
+                <td>800X800 mm (32X32)</td>
                 <td>20</td>
                 <td>GLAZED PROCELAIN TILES</td>
                 <td>GLOSS/MATT/HIGH GLOSS</td>
@@ -183,7 +183,7 @@ const PackingDetails = () => {
               </tr>
 
               <tr key={13}>
-                <td>800X1600 mm (32"X64")</td>
+                <td>800X1600 mm (32X64)</td>
                 <td>20</td>
                 <td>GLAZED PROCELAIN TILES</td>
                 <td>GLOSS/MATT/HIGH GLOSS</td>
