@@ -13,6 +13,7 @@ import Strength from "@/component/strength/Strength";
 import img4 from "../../images/1bb.png";
 import img6 from "../../images/path4 (1).png"
 import img5 from "../../images/path2 (2).png"
+import Navbar from "@/component/Navbar/Navbar";
 
 const cards = [
   {
@@ -241,24 +242,7 @@ export default function Home() {
 
   return (
     <div className="hero-section">
-      <div className="navbar">
-        <div className="navbar-image">
-        <Image src={img6} height={40} alt="" /> 
-        <Image src={img5} height={27} width={79} alt="" className="i78" />
-        </div>
-        
-        <div className="a1">
-          <div>Home</div>
-          <div>About Us</div>
-          <div>Product</div>
-          <div>E-Catalogue</div>
-          <div>Contact Us</div>
-        </div>
-        <div className="icon">
-          {" "}
-          <FiAlignJustify />{" "}
-        </div>
-      </div>
+      <Navbar/>
 
       {isMobile ? (
         <div className="mbox2 h-[100vh] w-[100vw]">
@@ -481,17 +465,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* </div> */}
-      
-      {/* <div className="mobile-strength max_z ">
-           <div id="main">
-            <div id="top"></div>
-            <div id="center"></div>
-            <div id="bottom">
-              <Strength />
-            </div>
-           </div>
-      </div> */}
       
       <div className="max_z">
            <div id="main">
@@ -502,6 +475,8 @@ export default function Home() {
             </div>
            </div>
       </div>
+    
+
     </div>
   );
 }
