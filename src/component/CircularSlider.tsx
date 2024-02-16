@@ -4,7 +4,7 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { Observer } from "gsap/Observer";
 import { progress } from "framer-motion";
-import img4 from "../../images/1bb.png"
+import img4 from "../../images/1bb.png";
 // props for the slider component
 interface ImageProps {
   src: string;
@@ -70,11 +70,12 @@ const CircularSlider = ({ images }: { images: ImageProps[] }) => {
   useEffect(() => {
     const initializeScrollTrigger = () => {
       gsap.registerPlugin(ScrollTrigger);
-      gsap.registerPlugin(Observer)
-  
+      gsap.registerPlugin(Observer);
+
       let wheel = wheelRef.current;
       let images = imagesRefs.current;
-    
+      let cardWidth = 0;
+
       // initial setup for gsap
       function setup() {
         let wheel = wheelRef.current;
@@ -90,7 +91,7 @@ const CircularSlider = ({ images }: { images: ImageProps[] }) => {
         //@ts-ignore
         center = wheel.offsetWidth / 2;
 
-        let cardWidth = images[0].offsetWidth;
+        cardWidth = images[0].offsetWidth;
         slice = (cardWidth * 1.765) / radius;
         initialSlice = slice;
 
@@ -115,13 +116,12 @@ const CircularSlider = ({ images }: { images: ImageProps[] }) => {
       setup();
 
       window.addEventListener("resize", setup);
-
       // the rotation thingy
       gsap.to(wheelRef.current, {
         rotate: () =>
           -5 *
           (180 / Math.PI) *
-          ((images[0].offsetWidth * 1.765) /
+          ((cardWidth * 1.765) /
             //@ts-ignore
             // for radius change during rotation
             (Math.min(wheel.offsetWidth, wheel.offsetHeight) / 2)),
@@ -136,7 +136,7 @@ const CircularSlider = ({ images }: { images: ImageProps[] }) => {
           pin: true,
           // markers:true,
           snap: {
-            snapTo: (1 / (images.length - 1)),
+            snapTo: 1 / (images.length - 1),
             duration: 0.5,
             ease: "linear",
             delay: 0.4,
@@ -163,7 +163,7 @@ const CircularSlider = ({ images }: { images: ImageProps[] }) => {
           invalidateOnRefresh: true,
         },
       });
-      
+
       // Observer.create({
       //   type: "wheel,touch,pointer",
       //   wheelSpeed: -1,
@@ -172,7 +172,6 @@ const CircularSlider = ({ images }: { images: ImageProps[] }) => {
       //   tolerance: 10,
       //   preventDefault: true
       // });
-
 
       // for refresh stuff
       if (window.scrollY !== 0) {
@@ -217,12 +216,12 @@ const CircularSlider = ({ images }: { images: ImageProps[] }) => {
                   height={1000}
                   className="slider_img"
                 />
-           
+
                 <div className="overlay_on_slider left-0">
-                  
                   <span>
-                  <Image src={img4} alt="" />
-                    {image.heading}</span>
+                    <Image src={img4} alt="" />
+                    {image.heading}
+                  </span>
                   <div
                     className="view_products cursor-pointer"
                     onClick={image.buttonFunction}
