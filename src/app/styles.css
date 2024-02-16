@@ -485,6 +485,9 @@ p {
   #top {
     display: none;
   }
+  .hero-section{
+    overflow-x: hidden;
+  }
 }
 .i78 {
   position: relative;

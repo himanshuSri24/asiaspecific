@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+import { Observer } from "gsap/Observer";
 import { progress } from "framer-motion";
 import img4 from "../../images/1bb.png"
 // props for the slider component
@@ -23,8 +24,8 @@ let lastScrollPosition = 0;
 
 // function to scale the cards, not being used rn cause it's breaking the animation
 const gsapScaleChange = (progress: number) => {
-  const scaleUpValue = 1.1;
-  const scaleDownValue = 1;
+  const scaleUpValue = 0.9;
+  const scaleDownValue = 0.8;
   let cardToScaleUp = Math.floor(progress * 6);
   if (cardToScaleUp === 6) cardToScaleUp = 5;
 
@@ -34,7 +35,7 @@ const gsapScaleChange = (progress: number) => {
     width: "28vw",
     filter: "brightness(1)",
     // y: "-=100px",
-    duration: 0.8,
+    duration: 1,
     delay: 0,
   });
   const cardToScaleUpElement = document.getElementById(
@@ -51,7 +52,7 @@ const gsapScaleChange = (progress: number) => {
         width: "26vw",
         // y: "+=100px",
         filter: "brightness(0.5)",
-        duration: 0.2,
+        duration: 0.9,
         delay: 0,
       });
     }
@@ -69,10 +70,11 @@ const CircularSlider = ({ images }: { images: ImageProps[] }) => {
   useEffect(() => {
     const initializeScrollTrigger = () => {
       gsap.registerPlugin(ScrollTrigger);
-
+      gsap.registerPlugin(Observer)
+  
       let wheel = wheelRef.current;
       let images = imagesRefs.current;
-
+    
       // initial setup for gsap
       function setup() {
         let wheel = wheelRef.current;
@@ -124,7 +126,7 @@ const CircularSlider = ({ images }: { images: ImageProps[] }) => {
             // for radius change during rotation
             (Math.min(wheel.offsetWidth, wheel.offsetHeight) / 2)),
         ease: "none",
-        duration: 0.8,
+        // duration:3,
         scrollTrigger: {
           trigger: ".circular-slider",
           start: "top top",
@@ -132,8 +134,9 @@ const CircularSlider = ({ images }: { images: ImageProps[] }) => {
           end: "top -600vh",
           scrub: 2,
           pin: true,
+          // markers:true,
           snap: {
-            snapTo: 1 / (images.length - 1),
+            snapTo: (1 / (images.length - 1)),
             duration: 0.5,
             ease: "linear",
             delay: 0.4,
@@ -149,7 +152,6 @@ const CircularSlider = ({ images }: { images: ImageProps[] }) => {
               isScrollingDown = false;
             }
             lastScrollPosition = currentScrollPosition;
-          
           },
           onScrubComplete: ({ progress, direction, isActive }) => {
             gsapScaleChange(progress);
@@ -157,93 +159,20 @@ const CircularSlider = ({ images }: { images: ImageProps[] }) => {
           onSnapComplete: ({ progress, direction, isActive }) => {
             gsapScaleChange(progress);
           },
-          // onEnter: () => {
-          //   setEnterAnimationInProgress((x) => true);
-          //   gsap.utils.toArray(images).forEach((item, i) => {
-          //     let angle = i * slice;
 
-          //     let x = center + radius * Math.sin(angle);
-          //     let y = center - radius * Math.cos(angle);
-
-          //     //@ts-ignore
-          //     gsap.to(item, {
-          //       rotation: angle + "_rad",
-          //       xPercent: -50,
-          //       yPercent: -50,
-          //       x: x,
-          //       y: y,
-          //       duration: 0.5,
-          //     });
-          //   });
-          //   setEnterAnimationInProgress((x) => false);
-          // },
-          // onEnterBack: () => {
-          //   setEnterAnimationInProgress((x) => true);
-          //   gsap.utils.toArray(images).forEach((item, i) => {
-          //     let angle = i * slice;
-
-          //     let x = center + radius * Math.sin(angle);
-          //     let y = center - radius * Math.cos(angle);
-
-          //     //@ts-ignore
-          //     gsap.to(item, {
-          //       rotation: angle + "_rad",
-          //       xPercent: -50,
-          //       yPercent: -50,
-          //       x: x,
-          //       y: y,
-          //       duration: 0.5,
-          //     });
-          //   });
-          //   setEnterAnimationInProgress((x) => false);
-          // },
-          // onLeave: () => {
-          //   setEnterAnimationInProgress((x) => true);
-          //   if (!isScrollingDown) {
-          //     gsap.utils.toArray(images).forEach((item, i) => {
-          //       let angle = i * initialSlice;
-
-          //       let x = center + radius * Math.sin(angle);
-          //       let y = center - radius * Math.cos(angle);
-
-          //       //@ts-ignore
-          //       gsap.to(item, {
-          //         rotation: angle + "_rad",
-          //         xPercent: -50,
-          //         yPercent: -50,
-          //         x: x,
-          //         y: y,
-          //         duration: 0.5,
-          //       });
-          //     });
-          //   }
-          //   setEnterAnimationInProgress((x) => false);
-          // },
-          // onLeaveBack: () => {
-          //   setEnterAnimationInProgress((x) => false);
-          //   if (!isScrollingDown) {
-          //     gsap.utils.toArray(images).forEach((item, i) => {
-          //       let angle = i * initialSlice;
-
-          //       let x = center + radius * Math.sin(angle);
-          //       let y = center - radius * Math.cos(angle);
-
-          //       //@ts-ignore
-          //       gsap.to(item, {
-          //         rotation: angle + "_rad",
-          //         xPercent: -50,
-          //         yPercent: -50,
-          //         x: x,
-          //         y: y,
-          //         duration: 0.5,
-          //       });
-          //     });
-          //   }
-          //   setEnterAnimationInProgress((x) => false);
-          // },
           invalidateOnRefresh: true,
         },
       });
+      
+      // Observer.create({
+      //   type: "wheel,touch,pointer",
+      //   wheelSpeed: -1,
+      //   onDown: () => !animating && gotoSection(currentIndex - 1, -1),
+      //   onUp: () => !animating && gotoSection(currentIndex + 1, 1),
+      //   tolerance: 10,
+      //   preventDefault: true
+      // });
+
 
       // for refresh stuff
       if (window.scrollY !== 0) {

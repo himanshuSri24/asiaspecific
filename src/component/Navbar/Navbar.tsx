@@ -4,6 +4,7 @@ import { FiAlignJustify } from 'react-icons/fi'
 import img6 from "../../../images/path4 (1).png"
 import img5 from "../../../images/path2 (2).png"
 import "./style.css"
+import Link from 'next/link'
 const Navbar = () => {
   return (
     <div>
@@ -14,11 +15,10 @@ const Navbar = () => {
         </div>
         
         <div className="a1">
-          <div>Home</div>
-          <div>About Us</div>
-          <div>Product</div>
-          <div>E-Catalogue</div>
-          <div>Contact Us</div>
+          <Link href={"/"}><div>Home</div></Link>
+          <Link href={"/about-us"}><div>About Us</div></Link>
+          <Link href={"/E-Catalogue"}><div>E-Catalogue</div></Link>
+          <Link href={"/contact"}><div>Contact Us</div></Link>
         </div>
         <div className="icon">
           <FiAlignJustify />

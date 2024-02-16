@@ -147,7 +147,7 @@ export default function Home() {
             },
           })
           .to(".s1d1p2", {
-            gap: "400vw",
+            gap: "700vw",
             scale: 9,
           });
 
@@ -469,10 +469,8 @@ export default function Home() {
       <div className="max_z">
            <div id="main">
             <div id="top"></div>
-            <div id="center"></div>
-            <div id="bottom">
+         
               <Strength />
-            </div>
            </div>
       </div>
     
