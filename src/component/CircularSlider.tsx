@@ -164,7 +164,7 @@ const CircularSlider = ({ images }: { images: ImageProps[] }) => {
 
       window.addEventListener("resize", setup);
       // the rotation thingy
-      console.log(images[0].offsetWidth , "bubu")
+      // console.log(images[0].offsetWidth , "bubu")
       gsap.to(wheelRef.current, {
         rotate: () =>
           -5 *

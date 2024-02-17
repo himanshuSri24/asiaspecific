@@ -284,7 +284,16 @@
   gap: -10px;
 }
 
-.strength {
+/* .strength {
+  display: flex;
+  justify-content: center;
+  color: #e94d11;
+  font-size: 60px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  position: relative;
+} */
+.strength-laptop{
   display: flex;
   justify-content: center;
   color: #e94d11;
@@ -571,6 +580,11 @@ display .circlem {
   bottom: 169px;
   left: 15px;
 }
+
+.strength-mobile{
+  display: none;
+}
+
 @media (max-width: 400px) {
   .blogm {
     display: flex;
@@ -585,7 +599,9 @@ display .circlem {
     height: 226px;
     width: 280px;
   }
-
+  .strength-laptop{
+    display: none;
+  }
   .ie {
     transform: translateX(87px);
   }
@@ -605,7 +621,22 @@ display .circlem {
   .line1 {
     display: none;
   }
+ 
   .strength {
+    display: none;
+   }
+
+  .strength-mobile{
+    display: flex;
+    justify-content: center;
+    color: #e94d11;
+    font-size: 48px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position: relative;
+    top: 70px;
+  }
+  .strength-mobile{
     display: flex;
     justify-content: center;
     color: #e94d11;
@@ -621,6 +652,13 @@ display .circlem {
     width: 140px;
     position: relative;
     top: 52px;
+  }
+  .line2m{
+    height: 2px;
+    width: 140px;
+    position: relative;
+    top: 52px;
+    background-color: #e94d11;
   }
 
   .readym {
@@ -701,8 +739,14 @@ display .circlem {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 40px;
+    margin-left: 0px;
     max-width: 100vw;
+  }
+  .bigtextm{
+    font-size: 28px;
+    display: flex;
+    gap: 40px;
+    color: white;
   }
   .bigtext {
     font-size: 28px;
@@ -712,7 +756,36 @@ display .circlem {
   .smalltext {
     font-size: 16px;
   }
+  .smalltextm {
+    font-size: 20px;
+    color: #525251;
+    font-weight: 600;
+  }
 
+  .circlemb3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #e94d1140;
+    position: relative;
+    top: 28px;
+    left:2px
+  }
+  .circlemb34{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #e94d1140;
+    position: relative;
+    top: 28px;
+    left:21px
+  }
   .circle {
     display: flex;
     justify-content: center;
@@ -913,10 +986,21 @@ display .circlem {
   .blog {
     display: none;
   }
-  /* .bhoot-2{
+  .bhoot-2{
     display: none;
   }
-  .bhoot-4{
+  .bhoot-3{
     display: none;
-  } */
+  }
+  .bhoot-4-card-1-text-mobile{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    position: relative;
+    bottom: 140px;
+    left: 15px;
+  }
+
 }

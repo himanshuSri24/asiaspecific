@@ -17,10 +17,14 @@ const Strength = () => {
     <div>
       <div className="body123 flex flex-col">
         <div className="section1">
-          <div className="strength">
+          <div className="strength-laptop">
             <div className="line1"></div>
             <div className="strength-content">Strength</div>
             <div className="line2"></div>
+          </div>
+          <div className="strength-mobile">
+            <div className="strength-content">Strength</div>
+            <div className="line2m"></div>
           </div>
 
           <div className="logos">
@@ -28,60 +32,60 @@ const Strength = () => {
               <div className="nonextra">
                 <div className="block">
                   <div className="flex flex-col">
-                    <div className="bigtext">
+                    <div className="bigtextm">
                       450,000 <span className="sqm">sqm</span>
-                      <div className="circle">
+                      <div className="circlemb3">
                         <Image src={img6} height={12} width={12} alt="" />
                       </div>
                     </div>
                   </div>
-                  <div className="smalltext">landarea</div>
+                  <div className="smalltextm">landarea</div>
                 </div>
 
                 <div className="flex flex-col">
-                  <div className="bigtext">
+                  <div className="bigtextm">
                     5+
                     <div className="circle1">
                       <Image src={img6} height={12} width={12} alt="" />
                     </div>
                   </div>
-                  <div className="smalltext">Production unit</div>
+                  <div className="smalltextm">Production unit</div>
                 </div>
                 <div className="flex flex-col">
-                  <div className="bigtext">
+                  <div className="bigtextm">
                     8
                     <div className="circle2">
                       <Image src={img6} height={12} width={12} alt="" />
                     </div>
                   </div>
-                  <div className="smalltext">Available size</div>
+                  <div className="smalltextm">Available size</div>
                 </div>
                 <div className="flex flex-col">
-                  <div className="bigtext">
+                  <div className="bigtextm">
                     1000+
                     <div className="circle3">
                       <Image src={img6} height={12} width={12} alt="" />
                     </div>
                   </div>
-                  <div className="smalltext">Tiles design</div>
+                  <div className="smalltextm">Tiles design</div>
                 </div>
                 <div className="flex flex-col">
-                  <div className="bigtext">
+                  <div className="bigtextm">
                     7
                     <div className="circle4">
                       <Image src={img6} height={12} width={12} alt="" />
                     </div>
                   </div>
-                  <div className="smalltext">Surface finish</div>
+                  <div className="smalltextm">Surface finish</div>
                 </div>
                 <div className="flex flex-col">
-                  <div className="bigtext">
-                    70,000 <span className="text-[28px] font-[400]">sqm</span>
-                    <div className="circle">
-                      <Image src={img6} height={12} width={12} alt="" />
+                <div className="bigtextm">
+                      70,000 <span className="sqm">sqm</span>
+                      <div className="circlemb34">
+                        <Image src={img6} height={12} width={12} alt="" />
+                      </div>
                     </div>
-                  </div>
-                  <div className="smalltext">Per Day Capacity</div>
+                  <div className="smalltextm">Per Day Capacity</div>
                 </div>
               </div>
 
@@ -732,6 +736,85 @@ const Strength = () => {
               </div>
             </div>
        
+          </div>
+        </div>
+        <div className="blogm">
+          <div className="blog-heading">
+            Blog
+            <div className="line5"></div>
+          </div>
+          <div className="blog-content">
+            <div className="card">
+              <div>
+                <Image
+                  src={img1}
+                  alt=""
+                  height={336}
+                  width={416}
+                  className="i9"
+                />
+              </div>
+              <div className="red-heading">15 Dec</div>
+              <div className="content">
+                Asia Specific ceramics at covering The global tile & stone
+                experience
+              </div>
+            </div>
+
+            <div className="card">
+              <div>
+                <Image
+                  src={img2}
+                  alt=""
+                  height={336}
+                  width={416}
+                  className="i9"
+                />
+              </div>
+              <div className="red-heading">15 Dec</div>
+              <div className="content">Top Porcelain tiles manufacture...</div>
+            </div>
+
+            <div className="card">
+              <div>
+                <Image
+                  src={img3}
+                  alt=""
+                  height={336}
+                  width={416}
+                  className="i9"
+                />
+              </div>
+              <div className="red-heading">15 Dec</div>
+              <div className="content">
+                Best Ideas to make your living room more expensive
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="blogI">
+        <div className="blog-heading">
+           <div className="ie">International Events</div>
+            <div className="line5"></div>
+          </div>
+          <div className="blog-content1">
+            <div className="cardI">
+            <Image src={img4} alt="" />
+            <div className="bhoot-4-card-1-text-mobile">
+              <div>Date: 18 to 21 Apr, 2023</div>
+              <div>Exhibition: CONVERINGS</div>
+              <div>Venue: USA</div>
+              </div>
+            </div>
+
+            <div className="cardI1">
+            <Image src={img4} alt="" />
+            </div>
+
+            <div className="cardI2">
+            <Image src={img4} alt="" />
+            </div>
           </div>
         </div>
 
