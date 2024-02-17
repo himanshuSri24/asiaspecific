@@ -11,8 +11,8 @@ import CircularSlider from "@/component/CircularSlider";
 import { FiAlignJustify } from "react-icons/fi";
 import Strength from "@/component/strength/Strength";
 import img4 from "../../images/1bb.png";
-import img6 from "../../images/path4 (1).png"
-import img5 from "../../images/path2 (2).png"
+import img6 from "../../images/path4 (1).png";
+import img5 from "../../images/path2 (2).png";
 import Navbar from "@/component/Navbar/Navbar";
 
 const cards = [
@@ -63,7 +63,7 @@ const cards = [
 export default function Home() {
   gsap.registerPlugin(ScrollTrigger);
   const [isMobile, setIsMobile] = React.useState(true);
-
+  
   React.useEffect(() => {
     const mediaQuery = window.matchMedia("(max-width:400px)");
 
@@ -87,24 +87,6 @@ export default function Home() {
         duration: 2,
         ease: "power1.inOut",
       });
-  
-      var tl = gsap.timeline({
-        scrollTrigger: {
-            trigger: "#main",
-            // markers: true,
-            start: "110% 50%",
-            end: "110% 50%",
-            scrub: 2,
-            pin: true,
-        }
-    })
-    
-    tl.to("#top", {
-        top: "-60%"
-    }, 'a').to("#bottom", {
-        bottom: "-100%"
-    }, 'a')
-    
 
       gsap.to(".img-holder", {
         rotation: 0,
@@ -147,8 +129,8 @@ export default function Home() {
             },
           })
           .to(".s1d1p2", {
-            gap: "700vw",
-            scale: 9,
+            gap: "600vw",
+            scale: 35,
           });
 
         gsap
@@ -160,13 +142,11 @@ export default function Home() {
           .to(".s1d1p1", {
             scale: 2,
           });
-
       }
     } else {
       const about: any = document.querySelector(".about");
       const contentHolderHeight = about.offsetHeight;
       const imgHolderHeight = window.innerHeight;
-      const additionalScrollHeight = window.innerHeight;
       const totalBodyHeight = contentHolderHeight + imgHolderHeight;
       const object: any = document.querySelector(".mbox2");
       object.style.height = `${totalBodyHeight}px`;
@@ -199,7 +179,6 @@ export default function Home() {
           start: "top top",
           end: "+=200%",
           scrub: 2,
-          // markers:true,
         },
       });
 
@@ -211,11 +190,8 @@ export default function Home() {
           start: "top top",
           end: "+=200%",
           scrub: 2,
-          // markers:true,
         },
       });
-
-      
     }
   }, [isMobile]);
 
@@ -240,9 +216,16 @@ export default function Home() {
     };
   });
 
+  React.useEffect(() => {
+    console.log("brown")
+
+        // window.location.reload();
+  
+  }, []);
+
   return (
     <div className="hero-section">
-      <Navbar/>
+      <Navbar />
 
       {isMobile ? (
         <div className="mbox2 h-[100vh] w-[100vw]">
@@ -465,16 +448,9 @@ export default function Home() {
         </div>
       </div>
 
-      
       <div className="max_z">
-           <div id="main">
-            <div id="top"></div>
-         
-              <Strength />
-           </div>
+      <Strength />
       </div>
-    
-
     </div>
   );
 }

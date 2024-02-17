@@ -1,3 +1,4 @@
+"use client"
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import gsap from "gsap";
@@ -59,6 +60,52 @@ const gsapScaleChange = (progress: number) => {
   }
 };
 
+const cards = [
+  {
+    src: "https://i.ibb.co/dLk8nrW/Photo-1.png",
+    alt: "",
+    heading: "Porcelian Tiles",
+    buttonLabel: "View Products",
+    buttonFunction: () => {},
+  },
+  {
+    src: "https://i.ibb.co/rQVnqkN/Photo-2.png",
+    alt: "",
+    heading: "Ceramic Tiles",
+    buttonLabel: "View Products",
+    buttonFunction: () => {},
+  },
+  {
+    src: "https://i.ibb.co/x76KyJW/Photo-3.png",
+    alt: "",
+    heading: "Outdoor Pavers",
+    buttonLabel: "View Products",
+    buttonFunction: () => {},
+  },
+  {
+    src: "https://i.ibb.co/YDmpwyN/Photo-4.png",
+    alt: "",
+    heading: "SPC Flooring",
+    buttonLabel: "View Products",
+    buttonFunction: () => {},
+  },
+  {
+    src: "https://i.ibb.co/QpCWhdn/Photo-5.png",
+    alt: "",
+    heading: "Slab Tiles",
+    buttonLabel: "View Products",
+    buttonFunction: () => {},
+  },
+  {
+    src: "https://i.ibb.co/dt8Xwsr/Photo-6.png",
+    alt: "",
+    heading: "Subway Tiles",
+    buttonLabel: "View Products",
+    buttonFunction: () => {},
+  },
+];
+
+
 const CircularSlider = ({ images }: { images: ImageProps[] }) => {
   //states and refs
   const [enterAnimationInProgress, setEnterAnimationInProgress] =
@@ -67,7 +114,7 @@ const CircularSlider = ({ images }: { images: ImageProps[] }) => {
   const imagesRefs = useRef([] as HTMLDivElement[]);
   const circularSliderRef = useRef(null);
 
-  useEffect(() => {
+  React.useEffect(() => {
     const initializeScrollTrigger = () => {
       gsap.registerPlugin(ScrollTrigger);
       gsap.registerPlugin(Observer);
@@ -117,6 +164,7 @@ const CircularSlider = ({ images }: { images: ImageProps[] }) => {
 
       window.addEventListener("resize", setup);
       // the rotation thingy
+      console.log(images[0].offsetWidth , "bubu")
       gsap.to(wheelRef.current, {
         rotate: () =>
           -5 *
@@ -200,7 +248,7 @@ const CircularSlider = ({ images }: { images: ImageProps[] }) => {
           ref={circularSliderRef}
         >
           <div className="wheel overflow-hidden" ref={wheelRef}>
-            {images.map((image, index) => (
+            {cards.map((image, index) => (
               <div
                 className="wheel_card"
                 id={`wheel_card_${index}`}

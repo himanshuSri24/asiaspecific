@@ -15,14 +15,23 @@ overflow-x: hidden;
     background-color: aquamarine;
     overflow: hidden;
 }
+
 .hi{
   color:#F9F6F3;
   /* color:#212121; */
 }
 
+.sdhjkfdkshjkhj{
+  color:#F9F6F3;
+  /* color:#992222; */
+  /* text-transform: lowercase; */
+}
+
 .hii{
   color:#212121;
+  text-transform: none;
 }
+
 #top{
     position: absolute;
     top: 0%;
@@ -85,10 +94,11 @@ overflow-x: hidden;
 }
 .content-grid h1{
   font-size: 68px;
-  font-weight: 600;
-  position: relative;
-  top: -82.5px;
-  right: -312px;
+    font-weight: 600;
+    position: relative;
+    top: -53px;
+    right: -321px;
+    transform: scale(1.019);
 }
 .foo{
   /* margin-top: 295px; */

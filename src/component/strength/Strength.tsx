@@ -5,16 +5,12 @@ import img from "./circle.png";
 import img1 from "../../../images/Rectangle 95.png";
 import img2 from "../../../images/Rectangle 95 (1).png";
 import img3 from "../../../images/Rectangle 95 (2).png";
-import img4 from "../../../images/path2 (1).png";
-import img5 from "../../../images/path4.png";
+import img4 from "../../../images/catalogue/Vector (3).png";
 import img6 from "../../../images/Vector (3).png";
 import img7 from "../../../images/Subtract.png";
 import img8 from "../../../images/mobilecircle.png";
-import img9 from "../../../images/Linked in.svg";
-import img10 from "../../../images/Instagram - 1.svg";
-import img11 from "../../../images/Facebook -1.svg";
-import img12 from "../../../images/Youtube.svg";
-import img13 from "../../../images/Pinterest.svg";
+ 
+import Footer from "../footer/Footer";
 
 const Strength = () => {
   return (
@@ -308,7 +304,6 @@ const Strength = () => {
             </div>
           </div>
         </div>
-
         <div className="noextra1">
           <div className="h1t1">Chemical Resistant</div>
           <div className="i7">
@@ -329,7 +324,6 @@ const Strength = () => {
           </div>
           <div className="h1t1">impact Resistance</div>
         </div>
-
         <div className="h1">
           <div className="h1t1">Chemical Resistant</div>
           <div className="h1t1">Fire Strength</div>
@@ -631,7 +625,6 @@ const Strength = () => {
           <div className="h1t1">impact Resistance</div>
           <div className="diamond"></div>
         </div>
-
         <div className="circlei">
           <div className="z">
             <div className="network">Network</div>
@@ -659,7 +652,6 @@ const Strength = () => {
             </div>
           </div>
         </div>
-
         <div className="circlew">
           <div className="z1">
             <div className="network1">Network</div>
@@ -687,7 +679,64 @@ const Strength = () => {
             </div>
           </div>
         </div>
+        <div className="bhoot-2">
+          <div className="bhoot-2-heading">Blog</div>
+          <div className="bhoot">
+            <div className="bhoot-1">
+              <Image src={img1} alt="" className="i090" />
+              <h1>15 Dec</h1>
+              <p>
+                Asia Pacific Ceramic at Coverings – The Global Tile & Stone
+                Experie
+              </p>
+            </div>
+            <div className="bhoot-1">
+              <Image src={img2} alt="" className="i090" />
+              <h1>15 Dec</h1>
+              <p>Top Porcelain Tiles Manufacturer ...</p>
+            </div>
+            <div className="bhoot-1">
+              <Image src={img3} alt="" className="i090" />
+              <h1>15 Dec</h1>
+              <p>Best Ideas To Make Your Living Room Look More Expensive.</p>
+            </div>
+          </div>
+        </div>
+        <div className="bhoot-3">
+          <div className="bhoot-2-heading">International Events</div>
+          <div className="bhoot-4">
+            <div className="bhoot-4-card-1">
+              <Image src={img4} alt="" />
+              <div className="bhoot-4-card-1-text">
+              <div>Date: 18 to 21 Apr, 2023</div>
+              <div>Exhibition: CONVERINGS</div>
+              <div>Venue: USA</div>
+              </div>
+          
 
+            </div>
+            <div className="bhoot-4-card-2">
+            <Image src={img4} alt="" />
+            <div className="bhoot-4-card-1-text">
+              <div>Date: 18 to 21 Apr, 2023</div>
+              <div>Exhibition: CONVERINGS</div>
+              <div>Venue: USA</div>
+              </div>
+            </div>
+            <div className="bhoot-4-card-3">
+            <Image src={img4} alt="" />
+            <div className="bhoot-4-card-1-text">
+              <div>Date: 18 to 21 Apr, 2023</div>
+              <div>Exhibition: CONVERINGS</div>
+              <div>Venue: USA</div>
+              </div>
+            </div>
+       
+          </div>
+        </div>
+
+        <Footer />
+        {/* 
         <div className="blog">
           <div className="blog-heading">
             Blog
@@ -1006,7 +1055,7 @@ const Strength = () => {
               </div>
             </div>
 
-        </footer>
+        </footer> */}
       </div>
     </div>
   );

@@ -9,10 +9,11 @@ const Navbar = () => {
   return (
     <div>
     <div className="navbar">
+      <Link href={"/"}>
         <div className="navbar-image">
         <Image src={img6} height={40} alt="" /> 
         <Image src={img5} height={27} width={79} alt="" className="i78" />
-        </div>
+        </div></Link>
         
         <div className="a1">
           <Link href={"/"}><div>Home</div></Link>

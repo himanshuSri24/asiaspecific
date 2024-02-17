@@ -15,8 +15,10 @@ import img7 from "../../../images/catalogue/Rectangle 75 (6).png";
 import img8 from "../../../images/catalogue/Rectangle 75 (7).png";
 
 import Footer from "@/component/footer/Footer";
+import { useRouter } from "next/navigation";
 const ECatalogue = () => {
-  useEffect(() => {
+  const router = useRouter();
+  React.useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
     var tl = gsap.timeline();
@@ -49,7 +51,7 @@ const ECatalogue = () => {
         {
           color: "black",
           x: -400,
-          y: 300,
+          y: 331,
           fontWeight: "600",
           scale: 1.4,
           duration: 2,
@@ -64,11 +66,14 @@ const ECatalogue = () => {
       .add(() => {
         // Animation completed, add class .bye to .catalogue and remove class .hi from h1
         gsap.set(".catalogue", { className: "+=bye" });
-        gsap.set(".hi", { className: "+=hii" });
+        gsap.set(".sdhjkfdkshjkhj", { className: "hii" });
       })
-      .delay(1);
   }, []);
 
+  // React.useEffect(() => {
+  //   window.location.reload()
+  // }, []);
+  
   return (
     <div>
       <Navbar />
@@ -79,7 +84,7 @@ const ECatalogue = () => {
         <div id="center">
           <div className="content">
             <div className="content-grid">
-              <h1 className="hi">E-Catalogue</h1>
+              <h1 className="sdhjkfdkshjkhj">E-C<span style={{textTransform:"lowercase"}}>atalogue</span></h1>
               <div className="content-grid-images">
                 <div className="images">
                   <Image src={img1} alt="" />
@@ -150,6 +155,7 @@ const ECatalogue = () => {
         </div>
       </div>
     </div>
+   
   );
 };
 
