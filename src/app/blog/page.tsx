@@ -13,7 +13,7 @@ const Blog = () => {
     <div className="body456">
       <Navbar />
       <section className="blog-urvesh">
-        <h1 className="blog-heading-456">Blog</h1>
+        <div className="blog-heading-456">Blog</div>
         <div className="blog-content">
           <Image src={img1} alt="" height={400} width={400} />
           <div className="blog-content-content">
