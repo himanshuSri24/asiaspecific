@@ -8,7 +8,7 @@ const PackingDetails = () => {
     <div className="packing-details-body">
       <Navbar />
       <div className="packing-details">
-        <h1>Packing Details</h1>
+        <div className="z12">Packing Details</div>
         <div className="packing-details-content">
           <div className="para">
             Below packing details are based on 27 ton capacity at the

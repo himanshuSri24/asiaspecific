@@ -10,13 +10,20 @@
 
 
 .blog-heading-456 {
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 100px;
   line-height: 167px;
   transform: translateX(288px);
 }
-
+/* 
 .blog {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  background-color: #fefaf8;
+} */
+
+.blog-urvesh{
   display: flex;
   flex-direction: column;
   margin-top: 100px;

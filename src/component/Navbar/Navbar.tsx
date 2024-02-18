@@ -35,7 +35,7 @@ const Navbar: React.FC = () => {
         <li><Link href={"/"}>About Us</Link></li>
         <li><Link href={"/"}>Product</Link></li>
         <li onClick={handleInformationClick}>
-          <Link href={"/"}>Information</Link>
+          <Link href={"#"}>Information</Link>
           {isDropdownVisible && (
             <div className="dropdown__menu" onClick={handleOutsideClick}>
               <ul>
