@@ -15,7 +15,7 @@ const PackingDetails = () => {
             destination port. It may vary from port to port
           </div>
           <div className="button">
-            <button>Download PDF</button>
+            <button className="pdf-button">Download PDF</button>
           </div>
         </div>
         <div className="packing-details-table">

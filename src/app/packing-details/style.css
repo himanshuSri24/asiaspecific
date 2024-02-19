@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: beautique-display;
+  src: url("/font/BeautiqueDisplay-Black-BF63fd5fa82b67d.otf"),url("/font/BeautiqueDisplay-Medium-BF63fd5fa832247.otf");
+}
 
 .packing-details {
   display: flex;
@@ -29,10 +33,13 @@ th {
  
 
 .z12{
+  font-family: beautique-display;
   font-weight: 500;
   font-size: 100px;
   line-height: 168px;
-  transform: translateX(-222px);
+  transform: translateX(-289px);
+  letter-spacing: -2px;
+
 }
 
 .packing-details-content {
@@ -50,7 +57,8 @@ th {
   color: #606060;
   /* background-color: blueviolet; */
 }
-.button {
+
+.pdf-button{
   background-color: #e94d11;
   display: flex;
   justify-content: center;
@@ -59,7 +67,6 @@ th {
   height: 53px;
   color: white;
   font-size: 22px;
-  /* border-radius: 7px; */
 }
 
 .packing-details-body {

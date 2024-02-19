@@ -269,9 +269,9 @@ export default function Home() {
       {isMobile ? (
         <div className="about">
           <div className="about1">
-            <div className="text-[30px] font-[500] leading-[32px] text-[#212121] relative right-[75px] my-2">
-              About us
-            </div>
+          <div className="text-[24px] font-[500] leading-[32px] text-[#212121] addfontm ">
+                About Us
+              </div>
             <div className="w-[60px] h-[1px] bg-[#E94D11] relative bottom-2 right-[105px]"></div>
 
             <div>
@@ -301,8 +301,8 @@ export default function Home() {
             </div>
 
             <div className="about2d2 flex flex-col justify-evenly">
-              <div className="text-[52px] font-[500] leading-[74px] text-[#212121]">
-                About us
+              <div className="text-[52px] font-[500] leading-[74px] text-[#212121] addfont">
+                About Us
               </div>
 
               <div className="w-[60px] h-[1px] bg-[#E94D11] relative bottom-2"></div>

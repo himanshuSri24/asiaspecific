@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
+@font-face {
+  font-family: beautique-display;
+  src: url("/font/BeautiqueDisplay-Black-BF63fd5fa82b67d.otf"),url("/font/BeautiqueDisplay-Medium-BF63fd5fa832247.otf");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -57,10 +62,13 @@ body {
 }
 
 .s1d1p2 {
+  font-family: beautique-display;
+  font-weight: 500;
   display: flex;
   justify-content: center;
   gap: 40px;
-  font-size: 9rem;
+  font-size:180px;
+  line-height: 252px;
 }
 
 h1 {
@@ -150,8 +158,24 @@ p {
   align-items: center;
   z-index: 500;
 }
+.addfont{
+  font-size: 52px;
+  letter-spacing: -4px;
+  font-family: beautique-display;
+  font-weight: 500;
+}
+
+.addfontm{
+  position: relative;
+  right: 90px;
+  letter-spacing: -1px;
+  font-family: beautique-display;
+  font-weight: 500;
+  font-size: 28px;
+}
 
 .about1 {
+
   background: url("https://i.ibb.co/7S7cRJX/background2.jpg") center
     center/cover;
   height: 70vh;
@@ -204,6 +228,7 @@ p {
 }
 
 .md1 {
+  font-family: beautique-display;
   font-weight: 500;
   font-size: 52px;
   line-height: 72.8px;
@@ -211,6 +236,7 @@ p {
 }
 
 .spaces {
+  font-family: beautique-display;
   position: fixed;
   top: 249px;
   left: 150px;
@@ -295,10 +321,7 @@ p {
   .none {
     display: none;
   }
-  .about1 {
-    height: 110vh;
-    width: 85vw;
-  }
+   
   .navbar {
     display: flex;
     justify-content: center;
@@ -324,6 +347,8 @@ p {
     display: none;
   }
   .s1d1p2 {
+    font-family: beautique-display;
+    font-weight: 500;
     font-size: 2.5rem;
     gap: 10px;
   }
@@ -439,6 +464,7 @@ p {
     gap: 20px;
   }
   .mobile-card-text {
+    font-family: beautique-display;
     font-weight: 500;
     font-size: 37px;
     color: #ffffff;
@@ -538,14 +564,19 @@ p {
 }
 
 .overlay_on_slider span {
-  font-size: 60px;
-  font-weight: 500;
-  line-height: 84px;
-  max-width: 159px;
+  font-family: beautique-display;
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 84px;
+    max-width: 159px;
+    letter-spacing: -1px;
+    line-height: 59px;
+    padding: 13px 0px;
+
 }
 .overlay_on_slider span img {
   min-width: 234px;
-  transform: translateX(-10px);
+  transform: translate(-12px, -27px);
 }
 
 .overlay_on_slider_right {

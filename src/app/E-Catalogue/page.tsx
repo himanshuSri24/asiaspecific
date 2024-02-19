@@ -50,9 +50,9 @@ const ECatalogue = () => {
         ".catalogue",
         {
           color: "black",
-          x: -400,
+          x: -435,
           y: 331,
-          fontWeight: "600",
+          fontWeight: "500",
           scale: 1.4,
           duration: 2,
         },

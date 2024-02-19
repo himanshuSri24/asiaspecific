@@ -1,3 +1,4 @@
+"use client"
 import Navbar from "@/component/Navbar/Navbar";
 import React from "react";
 import "./style.css";
@@ -7,8 +8,10 @@ import img2 from "../../../images/blog/Rectangle 95 (2).png";
 import img3 from "../../../images/blog/Rectangle 95 (3).png";
 import img4 from "../../../images/blog/Rectangle 95 (4).png";
 import Footer from "@/component/footer/Footer";
-
+import { useRouter } from "next/navigation"
 const Blog = () => {
+  const router = useRouter();
+  
   return (
     <div className="body456">
       <Navbar />
@@ -29,7 +32,9 @@ const Blog = () => {
               the solutions and sources you need at the preeminent ceramic tile
               & natural
             </div>
-            <button> View </button>
+            <button onClick={()=>{
+              router.push("/blog-details")
+            }} > View </button>
           </div>
         </div>
 

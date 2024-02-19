@@ -3,6 +3,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: beautique-display;
+  src: url("/font/BeautiqueDisplay-Black-BF63fd5fa82b67d.otf"),url("/font/BeautiqueDisplay-Medium-BF63fd5fa832247.otf");
+}
 .body123 {
   background-color: #faf6f3;
   overflow-x: hidden;
@@ -141,8 +145,10 @@
 }
 
 .z21 {
+  font-family: beautique-display;
   font-size: 60px;
   font-weight: 500;
+  letter-spacing: -2px;
 }
 
 .z22 {
@@ -239,6 +245,7 @@
 
 .section1 {
   /* height: 400px; */
+  /* font-family: beautique-display; */
   width: 100vw;
   background-color: #212121;
   display: flex;
@@ -293,6 +300,11 @@
   margin-bottom: 50px;
   position: relative;
 } */
+.strength-content{
+  font-family: beautique-display;
+  font-size: 74px;
+}
+
 .strength-laptop{
   display: flex;
   justify-content: center;
@@ -319,6 +331,7 @@
 }
 
 .bigtext {
+  font-family: beautique-display;
   color: #faf6f3;
   font-size: 52px;
   font-weight: 500;
@@ -332,6 +345,7 @@
 }
 
 .network {
+  font-family: beautique-display;
   color: #e94d11;
   font-size: 72px;
 }
@@ -519,6 +533,7 @@ display .circlem {
 }
 
 .bhoot-2-heading {
+  font-family: beautique-display;
   font-size: 52px;
   border-bottom: 2px solid red;
 }
@@ -940,7 +955,8 @@ display .circlem {
     background-color: #e94d11;
   }
   .blog-heading {
-    font-size: 24px;
+    font-family: beautique-display;
+    font-size: 31px;
     font-weight: 500;
     line-height: 32px;
     position: relative;
