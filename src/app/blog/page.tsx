@@ -52,7 +52,9 @@ const Blog = () => {
               quantities have made porcelain tiles available for the average
               household in recent years.
             </div>
-            <button> View </button>
+            <button onClick={()=>{
+              router.push("/blog-details")
+            }} > View </button>
           </div>
         </div>
 
@@ -70,7 +72,9 @@ const Blog = () => {
               the solutions and sources you need at the preeminent ceramic tile
               & natural s
             </div>
-            <button> View </button>
+            <button onClick={()=>{
+              router.push("/blog-details")
+            }} > View </button>
           </div>
         </div>
 
@@ -88,7 +92,9 @@ const Blog = () => {
               the solutions and sources you need at the preeminent ceramic tile
               & natural s
             </div>
-            <button> View </button>
+            <button onClick={()=>{
+              router.push("/blog-details")
+            }} > View </button>
           </div>
         </div>
       </section>
