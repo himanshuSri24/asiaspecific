@@ -12,7 +12,7 @@ import "./style.css";
 const Footer = () => {
   return (
     <div>
-      <div className="ready">
+      <div className="ready font-bd">
         <div className="ready-content">Ready to work together?</div>
         <div className="circle"></div>
         <div className="ready-content">Ready to work together?</div>
@@ -20,7 +20,7 @@ const Footer = () => {
         <div className="ready-content">Ready to work together?</div>
       </div>
 
-      <div className="readym">
+      <div className="readym font-bd">
         <div className="ready-content">Ready to work together?</div>
         <div className="circlem"></div>
         <div className="ready-content">Ready to work together?</div>

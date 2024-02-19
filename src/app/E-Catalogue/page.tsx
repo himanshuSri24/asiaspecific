@@ -50,7 +50,7 @@ const ECatalogue = () => {
         ".catalogue",
         {
           color: "black",
-          x: -435,
+          x: -400,
           y: 331,
           fontWeight: "500",
           scale: 1.4,
@@ -79,11 +79,11 @@ const ECatalogue = () => {
       <Navbar />
       <div id="main">
         <div id="top">
-          <div className="catalogue">E-Catalogue</div>
+          <div className="catalogue font-bd">E-Catalogue</div>
         </div>
         <div id="center">
           <div className="content">
-            <div className="content-grid">
+            <div className="content-grid font-bd">
               <h1 className="sdhjkfdkshjkhj">E-C<span style={{textTransform:"lowercase"}}>atalogue</span></h1>
               <div className="content-grid-images">
                 <div className="images">

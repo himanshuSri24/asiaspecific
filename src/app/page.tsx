@@ -252,7 +252,7 @@ export default function Home() {
               <p className="s1d1p1">
                 We build <span>-</span>
               </p>
-              <div className="s1d1p2">
+              <div className="s1d1p2 font-bd">
                 <div className="d1">Luxurious</div>{" "}
                 <div className="d2">Spaces</div>
               </div>
@@ -269,7 +269,7 @@ export default function Home() {
       {isMobile ? (
         <div className="about">
           <div className="about1">
-          <div className="text-[24px] font-[500] leading-[32px] text-[#212121] addfontm ">
+          <div className="text-[24px] font-[500] leading-[32px] text-[#212121] addfontm font-bd">
                 About Us
               </div>
             <div className="w-[60px] h-[1px] bg-[#E94D11] relative bottom-2 right-[105px]"></div>
@@ -301,7 +301,7 @@ export default function Home() {
             </div>
 
             <div className="about2d2 flex flex-col justify-evenly">
-              <div className="text-[52px] font-[500] leading-[74px] text-[#212121] addfont">
+              <div className="text-[52px] font-[500] leading-[74px] text-[#212121] addfont font-bd">
                 About Us
               </div>
 

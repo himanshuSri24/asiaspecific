@@ -1,8 +1,18 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-
+import localfont from "next/font/local";
 const inter = Inter({ subsets: ["latin"] });
+
+const bd = localfont({
+  src: [
+    {
+      path: "../../public/font/BeautiqueDisplay-Medium-BF63fd5fa832247.otf",
+      // weight: "100",
+    },
+  ],
+   variable:"--beautique-display"
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,8 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${bd.variable} ${inter.className}`}>{children}</body>
     </html>
   );
 }
-    

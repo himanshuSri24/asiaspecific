@@ -266,7 +266,7 @@ const CircularSlider = ({ images }: { images: ImageProps[] }) => {
                 />
 
                 <div className="overlay_on_slider left-0">
-                  <span>
+                  <span className="font-bd">
                     <Image src={img4} alt="" />
                     {image.heading}
                   </span>

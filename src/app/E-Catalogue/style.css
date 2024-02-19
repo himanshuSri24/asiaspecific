@@ -3,10 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-@font-face {
-  font-family: beautique-display;
-  src: url("/font/BeautiqueDisplay-Black-BF63fd5fa82b67d.otf"),url("/font/BeautiqueDisplay-Medium-BF63fd5fa832247.otf");
-}
+ 
 .body789{
 overflow-x: hidden;
 }
@@ -23,12 +20,12 @@ overflow-x: hidden;
 .hi{
   color:#F9F6F3;
   /* color:#212121; */
-  font-family: beautique-display;
+  font-family: var("--beautique-display");
   color:#F9F6F3;
 }
 
 .sdhjkfdkshjkhj{
-  font-family: beautique-display;
+  font-family: var("--beautique-display");
   color:#F9F6F3;
   /* color:#992222; */
   /* text-transform: lowercase; */
@@ -37,7 +34,7 @@ overflow-x: hidden;
 .hii{
   color:#212121;
   text-transform: none;
-  font-family: beautique-display;
+  font-family: var("--beautique-display");
 }
 
 #top{
@@ -54,7 +51,7 @@ overflow-x: hidden;
 }
 
 .catalogue{
-  font-family: beautique-display;
+  font-family: var("--beautique-display");
     position: fixed;
     color: white;
     font-size: 3rem;

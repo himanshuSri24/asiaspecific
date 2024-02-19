@@ -16,7 +16,7 @@ const Blog = () => {
     <div className="body456">
       <Navbar />
       <section className="blog-urvesh">
-        <div className="blog-heading-456">Blog</div>
+        <div className="blog-heading-456 font-bd">Blog</div>
         <div className="blog-content">
           <Image src={img1} alt="" height={400} width={400} />
           <div className="blog-content-content">

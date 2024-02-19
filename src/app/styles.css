@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
-@font-face {
-  font-family: beautique-display;
-  src: url("/font/BeautiqueDisplay-Black-BF63fd5fa82b67d.otf"),url("/font/BeautiqueDisplay-Medium-BF63fd5fa832247.otf");
-}
+/* @font-face {
+  font-family: var("--beautique-display");
+  src: url("/public/font/BeautiqueDisplayCondensed-Italic-BF63fd5fb2ce0ae.otf");
+  font-weight: normal;
+} */
 
 * {
   margin: 0;
@@ -62,12 +63,12 @@ body {
 }
 
 .s1d1p2 {
-  font-family: beautique-display;
-  font-weight: 500;
+  /* font-family: var("--beautique-display"); */
+  font-weight: 400;
   display: flex;
   justify-content: center;
   gap: 40px;
-  font-size:180px;
+  font-size:152px;
   line-height: 252px;
 }
 
@@ -160,8 +161,9 @@ p {
 }
 .addfont{
   font-size: 52px;
-  letter-spacing: -4px;
-  font-family: beautique-display;
+  letter-spacing: 0px;
+  /* font-family: var("--beautique-display"); */
+  font-family: var("--beautique-display");
   font-weight: 500;
 }
 
@@ -169,7 +171,7 @@ p {
   position: relative;
   right: 90px;
   letter-spacing: -1px;
-  font-family: beautique-display;
+  font-family: var("--beautique-display");
   font-weight: 500;
   font-size: 28px;
 }
@@ -228,7 +230,7 @@ p {
 }
 
 .md1 {
-  font-family: beautique-display;
+  font-family: var("--beautique-display");
   font-weight: 500;
   font-size: 52px;
   line-height: 72.8px;
@@ -236,7 +238,7 @@ p {
 }
 
 .spaces {
-  font-family: beautique-display;
+  font-family: var("--beautique-display");
   position: fixed;
   top: 249px;
   left: 150px;
@@ -347,7 +349,7 @@ p {
     display: none;
   }
   .s1d1p2 {
-    font-family: beautique-display;
+    font-family: var("--beautique-display");
     font-weight: 500;
     font-size: 2.5rem;
     gap: 10px;
@@ -464,7 +466,7 @@ p {
     gap: 20px;
   }
   .mobile-card-text {
-    font-family: beautique-display;
+    font-family: var("--beautique-display");
     font-weight: 500;
     font-size: 37px;
     color: #ffffff;
@@ -564,13 +566,12 @@ p {
 }
 
 .overlay_on_slider span {
-  font-family: beautique-display;
+  font-family: var("--beautique-display");
     font-size: 60px;
     font-weight: 500;
-    line-height: 84px;
     max-width: 159px;
     letter-spacing: -1px;
-    line-height: 59px;
+    line-height: 82px;
     padding: 13px 0px;
 
 }

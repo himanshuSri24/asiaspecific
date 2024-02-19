@@ -19,11 +19,11 @@ const Strength = () => {
         <div className="section1">
           <div className="strength-laptop">
             <div className="line1"></div>
-            <div className="strength-content">Strength</div>
+            <div className="strength-content font-bd">Strength</div>
             <div className="line2"></div>
           </div>
           <div className="strength-mobile">
-            <div className="strength-content">Strength</div>
+            <div className="strength-content font-bd">Strength</div>
             <div className="line2m"></div>
           </div>
 
@@ -32,7 +32,7 @@ const Strength = () => {
               <div className="nonextra">
                 <div className="block">
                   <div className="flex flex-col">
-                    <div className="bigtextm">
+                    <div className="bigtextm font-bd">
                       450,000 <span className="sqm">sqm</span>
                       <div className="circlemb3">
                         <Image src={img6} height={12} width={12} alt="" />
@@ -43,7 +43,7 @@ const Strength = () => {
                 </div>
 
                 <div className="flex flex-col">
-                  <div className="bigtextm">
+                  <div className="bigtextm font-bd ">
                     5+
                     <div className="circle1">
                       <Image src={img6} height={12} width={12} alt="" />
@@ -52,7 +52,7 @@ const Strength = () => {
                   <div className="smalltextm">Production unit</div>
                 </div>
                 <div className="flex flex-col">
-                  <div className="bigtextm">
+                  <div className="bigtextm font-bd ">
                     8
                     <div className="circle2">
                       <Image src={img6} height={12} width={12} alt="" />
@@ -61,7 +61,7 @@ const Strength = () => {
                   <div className="smalltextm">Available size</div>
                 </div>
                 <div className="flex flex-col">
-                  <div className="bigtextm">
+                  <div className="bigtextm font-bd ">
                     1000+
                     <div className="circle3">
                       <Image src={img6} height={12} width={12} alt="" />
@@ -70,7 +70,7 @@ const Strength = () => {
                   <div className="smalltextm">Tiles design</div>
                 </div>
                 <div className="flex flex-col">
-                  <div className="bigtextm">
+                  <div className="bigtextm font-bd  ">
                     7
                     <div className="circle4">
                       <Image src={img6} height={12} width={12} alt="" />
@@ -79,7 +79,7 @@ const Strength = () => {
                   <div className="smalltextm">Surface finish</div>
                 </div>
                 <div className="flex flex-col">
-                <div className="bigtextm">
+                <div className="bigtextm font-bd ">
                       70,000 <span className="sqm">sqm</span>
                       <div className="circlemb34">
                         <Image src={img6} height={12} width={12} alt="" />
@@ -91,29 +91,29 @@ const Strength = () => {
 
               <div className="extra">
                 <div className="flex flex-col">
-                  <div className="bigtext">
+                  <div className="bigtext font-bd font-bd font-bd">
                     450,000 <span className="text-[28px] font-[400]">sqm</span>
                   </div>
                   <div className="smalltext">landarea</div>
                 </div>
                 <div className="flex flex-col">
-                  <div className="bigtext">5+</div>
+                  <div className="bigtext font-bd font-bd font-bd">5+</div>
                   <div className="smalltext">Production unit</div>
                 </div>
                 <div className="flex flex-col">
-                  <div className="bigtext">8</div>
+                  <div className="bigtext font-bd font-bd font-bd">8</div>
                   <div className="smalltext">Available size</div>
                 </div>
                 <div className="flex flex-col">
-                  <div className="bigtext">1000+</div>
+                  <div className="bigtext font-bd font-bd font-bd">1000+</div>
                   <div className="smalltext">Tiles design</div>
                 </div>
                 <div className="flex flex-col">
-                  <div className="bigtext">7</div>
+                  <div className="bigtext font-bd font-bd font-bd">7</div>
                   <div className="smalltext">Surface finish</div>
                 </div>
                 <div className="flex flex-col">
-                  <div className="bigtext">
+                  <div className="bigtext font-bd font-bd font-bd">
                     70,000 <span className="text-[28px] font-[400]">sqm</span>
                   </div>
                   <div className="smalltext">Per Day Capacity</div>
@@ -122,29 +122,29 @@ const Strength = () => {
 
               <div className="extra">
                 <div className="flex flex-col">
-                  <div className="bigtext">
+                  <div className="bigtext font-bd font-bd font-bd">
                     450,000 <span className="text-[28px] font-[400]">sqm</span>
                   </div>
                   <div className="smalltext">landarea</div>
                 </div>
                 <div className="flex flex-col">
-                  <div className="bigtext">5+</div>
+                  <div className="bigtext font-bd font-bd font-bd">5+</div>
                   <div className="smalltext">Production unit</div>
                 </div>
                 <div className="flex flex-col">
-                  <div className="bigtext">8</div>
+                  <div className="bigtext font-bd font-bd font-bd">8</div>
                   <div className="smalltext">Available size</div>
                 </div>
                 <div className="flex flex-col">
-                  <div className="bigtext">1000+</div>
+                  <div className="bigtext font-bd font-bd font-bd">1000+</div>
                   <div className="smalltext">Tiles design</div>
                 </div>
                 <div className="flex flex-col">
-                  <div className="bigtext">7</div>
+                  <div className="bigtext font-bd font-bd font-bd">7</div>
                   <div className="smalltext">Surface finish</div>
                 </div>
                 <div className="flex flex-col">
-                  <div className="bigtext">
+                  <div className="bigtext font-bd font-bd font-bd">
                     70,000 <span className="text-[28px] font-[400]">sqm</span>
                   </div>
                   <div className="smalltext">Per Day Capacity</div>
@@ -153,29 +153,29 @@ const Strength = () => {
 
               <div className="extra">
                 <div className="flex flex-col">
-                  <div className="bigtext">
+                  <div className="bigtext font-bd font-bd font-bd">
                     450,000 <span className="text-[28px] font-[400]">sqm</span>
                   </div>
                   <div className="smalltext">landarea</div>
                 </div>
                 <div className="flex flex-col">
-                  <div className="bigtext">5+</div>
+                  <div className="bigtext font-bd font-bd font-bd">5+</div>
                   <div className="smalltext">Production unit</div>
                 </div>
                 <div className="flex flex-col">
-                  <div className="bigtext">8</div>
+                  <div className="bigtext font-bd font-bd font-bd">8</div>
                   <div className="smalltext">Available size</div>
                 </div>
                 <div className="flex flex-col">
-                  <div className="bigtext">1000+</div>
+                  <div className="bigtext font-bd font-bd font-bd">1000+</div>
                   <div className="smalltext">Tiles design</div>
                 </div>
                 <div className="flex flex-col">
-                  <div className="bigtext">7</div>
+                  <div className="bigtext font-bd font-bd font-bd">7</div>
                   <div className="smalltext">Surface finish</div>
                 </div>
                 <div className="flex flex-col">
-                  <div className="bigtext">
+                  <div className="bigtext font-bd font-bd font-bd">
                     70,000 <span className="text-[28px] font-[400]">sqm</span>
                   </div>
                   <div className="smalltext">Per Day Capacity</div>
@@ -184,29 +184,29 @@ const Strength = () => {
 
               <div className="extra">
                 <div className="flex flex-col">
-                  <div className="bigtext">
+                  <div className="bigtext font-bd font-bd font-bd">
                     450,000 <span className="text-[28px] font-[400]">sqm</span>
                   </div>
                   <div className="smalltext">landarea</div>
                 </div>
                 <div className="flex flex-col">
-                  <div className="bigtext">5+</div>
+                  <div className="bigtext font-bd font-bd font-bd">5+</div>
                   <div className="smalltext">Production unit</div>
                 </div>
                 <div className="flex flex-col">
-                  <div className="bigtext">8</div>
+                  <div className="bigtext font-bd font-bd font-bd">8</div>
                   <div className="smalltext">Available size</div>
                 </div>
                 <div className="flex flex-col">
-                  <div className="bigtext">1000+</div>
+                  <div className="bigtext font-bd font-bd font-bd">1000+</div>
                   <div className="smalltext">Tiles design</div>
                 </div>
                 <div className="flex flex-col">
-                  <div className="bigtext">7</div>
+                  <div className="bigtext font-bd font-bd font-bd">7</div>
                   <div className="smalltext">Surface finish</div>
                 </div>
                 <div className="flex flex-col">
-                  <div className="bigtext">
+                  <div className="bigtext font-bd font-bd font-bd">
                     70,000 <span className="text-[28px] font-[400]">sqm</span>
                   </div>
                   <div className="smalltext">Per Day Capacity</div>
@@ -215,29 +215,29 @@ const Strength = () => {
 
               <div className="extra">
                 <div className="flex flex-col">
-                  <div className="bigtext">
+                  <div className="bigtext font-bd font-bd font-bd">
                     450,000 <span className="text-[28px] font-[400]">sqm</span>
                   </div>
                   <div className="smalltext">landarea</div>
                 </div>
                 <div className="flex flex-col">
-                  <div className="bigtext">5+</div>
+                  <div className="bigtext font-bd font-bd font-bd">5+</div>
                   <div className="smalltext">Production unit</div>
                 </div>
                 <div className="flex flex-col">
-                  <div className="bigtext">8</div>
+                  <div className="bigtext font-bd font-bd font-bd">8</div>
                   <div className="smalltext">Available size</div>
                 </div>
                 <div className="flex flex-col">
-                  <div className="bigtext">1000+</div>
+                  <div className="bigtext font-bd font-bd font-bd">1000+</div>
                   <div className="smalltext">Tiles design</div>
                 </div>
                 <div className="flex flex-col">
-                  <div className="bigtext">7</div>
+                  <div className="bigtext font-bd font-bd font-bd">7</div>
                   <div className="smalltext">Surface finish</div>
                 </div>
                 <div className="flex flex-col">
-                  <div className="bigtext">
+                  <div className="bigtext font-bd font-bd font-bd">
                     70,000 <span className="text-[28px] font-[400]">sqm</span>
                   </div>
                   <div className="smalltext">Per Day Capacity</div>
@@ -246,29 +246,29 @@ const Strength = () => {
 
               <div className="extra">
                 <div className="flex flex-col">
-                  <div className="bigtext">
+                  <div className="bigtext font-bd font-bd font-bd">
                     450,000 <span className="text-[28px] font-[400]">sqm</span>
                   </div>
                   <div className="smalltext">landarea</div>
                 </div>
                 <div className="flex flex-col">
-                  <div className="bigtext">5+</div>
+                  <div className="bigtext font-bd font-bd font-bd">5+</div>
                   <div className="smalltext">Production unit</div>
                 </div>
                 <div className="flex flex-col">
-                  <div className="bigtext">8</div>
+                  <div className="bigtext font-bd font-bd font-bd">8</div>
                   <div className="smalltext">Available size</div>
                 </div>
                 <div className="flex flex-col">
-                  <div className="bigtext">1000+</div>
+                  <div className="bigtext font-bd font-bd font-bd">1000+</div>
                   <div className="smalltext">Tiles design</div>
                 </div>
                 <div className="flex flex-col">
-                  <div className="bigtext">7</div>
+                  <div className="bigtext font-bd font-bd font-bd">7</div>
                   <div className="smalltext">Surface finish</div>
                 </div>
                 <div className="flex flex-col">
-                  <div className="bigtext">
+                  <div className="bigtext font-bd font-bd font-bd">
                     70,000 <span className="text-[28px] font-[400]">sqm</span>
                   </div>
                   <div className="smalltext">Per Day Capacity</div>
@@ -277,29 +277,29 @@ const Strength = () => {
 
               <div className="extra">
                 <div className="flex flex-col">
-                  <div className="bigtext">
+                  <div className="bigtext font-bd font-bd font-bd">
                     450,000 <span className="text-[28px] font-[400]">sqm</span>
                   </div>
                   <div className="smalltext">landarea</div>
                 </div>
                 <div className="flex flex-col">
-                  <div className="bigtext">5+</div>
+                  <div className="bigtext font-bd font-bd font-bd">5+</div>
                   <div className="smalltext">Production unit</div>
                 </div>
                 <div className="flex flex-col">
-                  <div className="bigtext">8</div>
+                  <div className="bigtext font-bd font-bd font-bd">8</div>
                   <div className="smalltext">Available size</div>
                 </div>
                 <div className="flex flex-col">
-                  <div className="bigtext">1000+</div>
+                  <div className="bigtext font-bd font-bd font-bd">1000+</div>
                   <div className="smalltext">Tiles design</div>
                 </div>
                 <div className="flex flex-col">
-                  <div className="bigtext">7</div>
+                  <div className="bigtext font-bd font-bd font-bd">7</div>
                   <div className="smalltext">Surface finish</div>
                 </div>
                 <div className="flex flex-col">
-                  <div className="bigtext">
+                  <div className="bigtext font-bd font-bd font-bd">
                     70,000 <span className="text-[28px] font-[400]">sqm</span>
                   </div>
                   <div className="smalltext">Per Day Capacity</div>
@@ -631,7 +631,7 @@ const Strength = () => {
         </div>
         <div className="circlei">
           <div className="z">
-            <div className="network">Network</div>
+            <div className="network font-bd">Network</div>
             <div className="line3"></div>
           </div>
 
@@ -641,17 +641,17 @@ const Strength = () => {
 
           <div className="z2">
             <div className="flex flex-col">
-              <div className="z21">5+ Countries</div>
+              <div className="z21 font-bd">5+ Countries</div>
               <div className="z22">Land area</div>
             </div>
 
             <div className="flex flex-col">
-              <div className="z21">60+</div>
+              <div className="z21 font-bd">60+</div>
               <div className="z22">countries Export</div>
             </div>
 
             <div className="flex flex-col">
-              <div className="z21">300+</div>
+              <div className="z21 font-bd">300+</div>
               <div className="z22">Overseas Client</div>
             </div>
           </div>
@@ -684,7 +684,7 @@ const Strength = () => {
           </div>
         </div>
         <div className="bhoot-2">
-          <div className="bhoot-2-heading">Blog</div>
+          <div className="bhoot-2-heading font-bd">Blog</div>
           <div className="bhoot">
             <div className="bhoot-1">
               <Image src={img1} alt="" className="i090" />
@@ -707,7 +707,7 @@ const Strength = () => {
           </div>
         </div>
         <div className="bhoot-3">
-          <div className="bhoot-2-heading">International Events</div>
+          <div className="bhoot-2-heading font-bd">International Events</div>
           <div className="bhoot-4">
             <div className="bhoot-4-card-1">
               <Image src={img4} alt="" />
@@ -739,7 +739,7 @@ const Strength = () => {
           </div>
         </div>
         <div className="blogm">
-          <div className="blog-heading">
+          <div className="blog-heading font-bd">
             Blog
             <div className="line5"></div>
           </div>
@@ -795,7 +795,7 @@ const Strength = () => {
 
         <div className="blogI">
         <div className="blog-heading">
-           <div className="ie">International Events</div>
+           <div className="ie font-bd">International Events</div>
             <div className="line5"></div>
           </div>
           <div className="blog-content1">
