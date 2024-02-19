@@ -10,7 +10,7 @@ const page = () => {
     <div className='body-blog-details-page'>
     <Navbar />
     <div className='blog-details-page'>
-      <div className='blog-details-page-heading'>
+      <div className='blog-details-page-heading font-bd'>
       Best Ideas To Make Your Living Room Look More Expensive.
       </div>
       <div className='blog-details-page-date'>
