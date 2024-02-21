@@ -230,7 +230,7 @@ const PackingDetails = () => {
           </table>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

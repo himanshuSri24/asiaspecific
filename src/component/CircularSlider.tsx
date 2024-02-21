@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import gsap from "gsap";
@@ -105,7 +105,6 @@ const cards = [
   },
 ];
 
-
 const CircularSlider = ({ images }: { images: ImageProps[] }) => {
   //states and refs
   const [enterAnimationInProgress, setEnterAnimationInProgress] =
@@ -125,30 +124,32 @@ const CircularSlider = ({ images }: { images: ImageProps[] }) => {
 
       // initial setup for gsap
       function setup() {
-        let wheel = wheelRef.current;
-        let images = imagesRefs.current;
+        wheel = wheelRef.current;
+        images = imagesRefs.current;
+
+        if (wheel === null) return;
 
         radius =
           radius === 0
-            ? //@ts-ignore
-              // for radius change during rotation
-              Math.min(wheel.offsetWidth, wheel.offsetHeight) / 2
+            ? // for radius change during rotation
+              Math.min(
+                (wheel as any).offsetWidth,
+                (wheel as any).offsetHeight
+              ) / 2
             : radius;
 
-        //@ts-ignore
-        center = wheel.offsetWidth / 2;
+        center = (wheel as any).offsetWidth / 2;
 
         cardWidth = images[0].offsetWidth;
         slice = (cardWidth * 1.765) / radius;
         initialSlice = slice;
 
-        gsap.utils.toArray(images).forEach((item, i) => {
+        gsap.utils.toArray(images).forEach((item: any, i) => {
           let angle = i * initialSlice;
 
           let x = center + radius * Math.sin(angle);
           let y = center - radius * Math.cos(angle);
 
-          //@ts-ignore
           gsap.set(item, {
             rotation: angle + "_rad",
             xPercent: -50,
@@ -162,17 +163,24 @@ const CircularSlider = ({ images }: { images: ImageProps[] }) => {
 
       setup();
 
+      if (wheel === null) return;
+
       window.addEventListener("resize", setup);
       // the rotation thingy
       // console.log(images[0].offsetWidth , "bubu")
       gsap.to(wheelRef.current, {
         rotate: () =>
-          -5 *
-          (180 / Math.PI) *
-          ((cardWidth * 1.765) /
-            //@ts-ignore
-            // for radius change during rotation
-            (Math.min(wheel.offsetWidth, wheel.offsetHeight) / 2)),
+          wheel === null
+            ? 0
+            : -5 *
+              (180 / Math.PI) *
+              ((cardWidth * 1.765) /
+                // for radius change during rotation
+                (Math.min(
+                  (wheel as any).offsetWidth,
+                  (wheel as any).offsetHeight
+                ) /
+                  2)),
         ease: "none",
         // duration:3,
         scrollTrigger: {
